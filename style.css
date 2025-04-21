@@ -1,0 +1,17 @@
+body {
+  background-image: url('images/iona_cruise_resized.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
