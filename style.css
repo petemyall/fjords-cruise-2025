@@ -4,14 +4,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: blue;
-  text-align: top;
+  color: white;
+  text-align: center;
   text-shadow: 1px 1px 3px black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 30px; /* Pushes content down a bit */
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;     /* Smaller space above */
+  margin-bottom: 10px;  /* Space between title and next element */
+}
