@@ -6,8 +6,8 @@ body {
   margin: 0;
   height: 100vh;
   font-family: Arial, sans-serif;
-  color: white;
-  text-align: center;
+  color: blue;
+  text-align: top;
   text-shadow: 1px 1px 3px black;
   display: flex;
   flex-direction: column;
