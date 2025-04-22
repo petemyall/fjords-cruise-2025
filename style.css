@@ -36,3 +36,32 @@ nav a {
   margin: 0 15px;
   font-weight: bold;
 }
+/* Bullet list styling */
+ul {
+  list-style-type: square;
+  padding-left: 1.5em;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Button styling */
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: royalblue;
+}
+
+/* Footer styling (optional) */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
