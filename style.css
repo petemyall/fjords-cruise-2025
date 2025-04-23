@@ -2,8 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e0e0e0; /* light to mid grey */
-  color: #000;
+  background-color: #e0e0e0; /* fallback if image fails */
+  background-image: url('iona-image.jpg'); /* adjust if filename is different */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; /* Ensure text is readable on the background */
 }
 
 h1, h2 {
@@ -30,11 +34,4 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-/* Apply background image on the homepage */
-body {
-  background-image: url('path/to/iona-image.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white; /* Ensure text is readable on the background */
-}
+
