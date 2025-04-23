@@ -3,16 +3,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e0e0e0; /* fallback if image fails */
-  background-image: url('iona-image.jpg'); /* adjust if filename is different */
+  background-image: url('iona-image.jpg'); /* replace with correct filename if different */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white; /* Ensure text is readable on the background */
+  color: white; /* default text colour for homepage */
 }
 
 h1, h2 {
   text-align: center;
-  color: #333;
+  color: #fff; /* headings readable on image background */
 }
 
 nav {
@@ -23,15 +23,15 @@ nav {
 nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: #0066cc;
+  color: #cce6ff; /* light blue for readability */
 }
 
 section {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #fff; /* white background for journal text */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #000; /* add this line to make text black in sections */
+  color: #000; /* black text for readability */
 }
