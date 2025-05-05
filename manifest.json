@@ -1,7 +1,7 @@
 {
-  "name": "My Gallery",
-  "short_name": "Gallery",
-  "start_url": "gallery.html",
+  "name": "Norwegian Fjords Cruise 2025",
+  "short_name": "Fjords Cruise",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#f0f8ff",
   "theme_color": "#003366",
