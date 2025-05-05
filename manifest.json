@@ -1,7 +1,7 @@
 {
   "name": "My Gallery",
   "short_name": "Gallery",
-  "start_url": "/fjords-cruise-2025/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#f0f8ff",
   "theme_color": "#003366",
