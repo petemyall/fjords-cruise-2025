@@ -1,85 +1,40 @@
-/* === Global Styles === */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e0e0e0; /* Fallback if image fails */
-  background-image: url('iona-image.jpg'); /* Ensure correct filename */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white; /* Default text colour */
-}
-
-/* === Headings === */
-h1, h2 {
   text-align: center;
-  color: #ffffff; /* Ensure white headings */
+  margin: 20px;
 }
 
-/* === Navigation === */
-nav {
-  text-align: center;
-  margin: 20px 0;
+.description-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
-nav a {
-  margin: 0 10px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #cce6ff;
-  text-decoration: none;
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-nav a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  color: white; /* Text colour brightens on hover */
+.entry p {
+  flex: 1;
+  text-align: left;
 }
 
-/* === Content Section === */
-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #000000; /* Black text for readability */
-}
-
-/* === Buttons (if any outside nav) === */
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #66B2FF; /* Pale blue */
+  background-color: #007BFF;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-.description-box {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Soft white with slight transparency */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.description-box h2 {
-  color: #003366; /* Deep blue */
-  margin-bottom: 15px;
-}
-
-.description-box p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6;
+  margin-left: 20px;
+  white-space: nowrap;
 }
