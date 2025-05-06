@@ -1,49 +1,90 @@
+/* === Global Styles === */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0; /* Fallback if image fails */
+  background-image: url('images/iona-image.jpg'); /* Ensure correct filename & path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; /* Default text colour */
+}
+
+/* === Headings === */
+h1, h2 {
   text-align: center;
-  margin: 20px;
+  color: #ffffff; /* Ensures readability */
 }
 
-.description-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 600px;
-  margin: auto;
-  background-color: rgba(248, 249, 250, 0.5); /* Light gray with 70% opacity */
-  padding: 20px;
-  border-radius: 10px;
-}y: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 600px;
-  margin: auto;
+/* === Navigation Styles === */
+nav {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.entry {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f9fa;
-  padding: 10px;
+nav a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #cce6ff;
+  text-decoration: none;
   border-radius: 5px;
-  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.entry p {
-  flex: 1;
-  text-align: left;
+nav a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white; /* Text brightens on hover */
 }
 
+/* === Content Box Styling === */
+.description-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Soft white with slight transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.description-box h2 {
+  color: #003366; /* Deep blue */
+  margin-bottom: 15px;
+}
+
+.description-box p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Image Gallery Styling === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.gallery img {
+  width: 200px;
+  border: 3px solid #003366;
+  border-radius: 8px;
+}
+
+/* === Button Styles (General Use) === */
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #66B2FF; /* Pale blue */
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-left: 20px;
-  white-space: nowrap;
+  transition: background-color 0.3s ease;
 }
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+                              }
