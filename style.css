@@ -1,20 +1,23 @@
+/* === Global Styles === */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e0e0e0; /* fallback if image fails */
-  background-image: url('iona-image.jpg'); /* replace with correct filename if different */
+  background-color: #e0e0e0; /* Fallback if image fails */
+  background-image: url('iona-image.jpg'); /* Ensure correct filename */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white; /* default text colour for homepage */
+  color: white; /* Default text colour */
 }
 
+/* === Headings === */
 h1, h2 {
   text-align: center;
-  color: #fff; /* headings readable on image background */
+  color: #ffffff; /* Ensure white headings */
 }
 
+/* === Navigation === */
 nav {
   text-align: center;
   margin: 20px 0;
@@ -22,16 +25,41 @@ nav {
 
 nav a {
   margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #cce6ff;
   text-decoration: none;
-  color: #cce6ff; /* light blue for readability */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
+nav a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white; /* Text colour brightens on hover */
+}
+
+/* === Content Section === */
 section {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
-  background-color: #fff; /* white background for journal text */
+  background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #000; /* black text for readability */
+  color: #000000; /* Black text for readability */
+}
+
+/* === Buttons (if any outside nav) === */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #66B2FF; /* Pale blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
