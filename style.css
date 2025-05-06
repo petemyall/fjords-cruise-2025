@@ -63,3 +63,23 @@ section {
 .button:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+.description-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Soft white with slight transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.description-box h2 {
+  color: #003366; /* Deep blue */
+  margin-bottom: 15px;
+}
+
+.description-box p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
