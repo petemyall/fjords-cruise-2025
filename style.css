@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e0e0e0; /* Fallback if image fails */
-  background-image: url('images/iona-image.jpg'); /* Ensure correct filename & path */
+  background-image: url('/images/iona-image.jpg'); /* Ensure correct filename & path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
