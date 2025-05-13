@@ -2,69 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photo Gallery - Fjords Cruise 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cruise Gallery</title>
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body { font-family: Arial, sans-serif; padding: 2em; }
-    h1 { text-align: center; color: #003366; }
-    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; }
-    .gallery img { width: 200px; border: 3px solid #003366; border-radius: 8px; }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #66B2FF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-
-  <link rel="manifest" href="manifest.json">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Fjords Cruise 2025">
-  <meta name="theme-color" content="#003366">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/icon.png">
-  <link rel="apple-touch-icon" href="images/icon.png">
-
 </head>
-<body>
+
+<body style="background-color: #aefcfc;">
+
+  <h1>P&O Iona Norwegian Fjords</h1>
   <h1>Photo Gallery</h1>
 
-  <div class="gallery">
-    <img src="images/photo1.jpg" alt="Photo 1" />
-    <img src="images/photo2.jpg" alt="Photo 2" />
-    <img src="images/photo3.jpg" alt="Photo 3" />
+    <nav>
+    <a href="index.html">🏠<br>HOME</a>
+    <a href="logbook.html">📒<br>LOG</a>
+    <a href="map.html">🗺️<br>MAP</a>
+  </nav>
+
+ <div class="description-box">
+  <p class="center-text">Here are some of our pictures of the magnificent Fjords.</p>
+ </div>
+   
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="images/photo1.jpg" alt="Stavanger" class="gallery-img">
+<img src="images/photo2.jpg" alt="Ålesund" class="gallery-img">
+<img src="images/photo3.jpg" alt="Olden" class="gallery-img">
   </div>
 
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9" target="_blank" class="button">
-      Click here for more
+  <div style="text-align: center; margin-bottom: 20px;">
+    <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_HERE?usp=sharing" target="_blank" style="display: inline-block; padding: 20px 40px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 25px; font-weight: bold;">
+      MORE PICTURES 📸
     </a>
   </div>
 
-  <nav>
-    <div style="text-align: center; margin-top: 20px;">
-      <a href="index.html" style="display: inline-block; padding: 10px 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;">
-        <span style="font-size: 40px;">🏠</span><br>
-        <span style="font-size: 20px;">HOME</span> 
-      </a>
-      <a href="logbook.html" style="display: inline-block; padding: 10px 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;">
-        <span style="font-size: 40px;">📒</span><br>
-        <span style="font-size: 20px;">LOG</span> 
-      </a>
-      <a href="map.html" style="display: inline-block; padding: 10px 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin: 0 10px;">
-        <span style="font-size: 40px;">🗺️</span><br>
-        <span style="font-size: 20px;">MAP</span> 
-      </a>
-    </div>
-  </nav>
 </body>
 </html>
