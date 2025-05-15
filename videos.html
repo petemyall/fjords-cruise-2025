@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cruise Videos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .video-wrapper {
+      flex: 1 1 45%;
+      max-width: 500px;
+      aspect-ratio: 16 / 9;
+      background-color: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .video-wrapper {
+        flex: 1 1 90%;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color: #aefcfc;">
+
+  <h1>P&O Iona Norwegian Fjords</h1>
+  <h1>Cruise Videos</h1>
+
+  <nav>
+    <a href="index.html">🏠<br>HOME</a>
+    <a href="logbook.html">📒<br>LOG</a>
+    <a href="map.html">🗺️<br>MAP</a>
+  </nav>
+
+  <div class="description-box">
+    <p class="center-text">Watch highlights from our unforgettable journey through the fjords. More videos will be added soon!</p>
+  </div>
+
+  <!-- Video Gallery Section -->
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/Scxs7L0vhZ4" allowfullscreen title="Cruise Video 1"></iframe>
+    </div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/THE2U2Fh6yo" allowfullscreen title="Cruise Video 2"></iframe>
+    </div>
+    <!-- Add more video-wrapper blocks as needed -->
+  </div>
+
+  <!-- Button Links Section -->
+  <div style="text-align: center; margin: 30px 0;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 750px; margin: 0 auto;">
+      <a href="https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+        Sailaway 👆
+      </a>
+      <a href="sea-days.html" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+        Sea Days 👆
+      </a>
+      <a href="stavanger.html" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+        Stavanger 👆
+      </a>
+      <a href="alesund.html" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+        Ålesund 👆
+      </a>
+      <a href="olden.html" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+        Olden 👆
+      </a>
+      <a href="haugesund.html" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+        Haugesund 👆
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
