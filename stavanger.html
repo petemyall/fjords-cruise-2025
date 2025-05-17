@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <title>STAVANGER SLIDESHOW</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Fotorama Styles and Script -->
+
+  <!-- Fotorama CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+  <!-- Fotorama JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-  
+
   <style>
     body {
       background-color: #aefcfc;
@@ -25,7 +28,7 @@
 
     .fotorama {
       margin: 0 auto;
-      max-width: 100%;
+      max-width: 90%;
     }
   </style>
 </head>
@@ -35,20 +38,22 @@
   <div class="fotorama"
        data-width="100%"
        data-fit="contain"
-       data-height="auto"
        data-nav="thumbs"
        data-autoplay="3000"
-       data-loop="true">
-    <img src="photos/stavanger/stav1.jpg">
-    <img src="photos/stavanger/stav2.jpg">
-    <img src="photos/stavanger/stav3.jpg">
-    <img src="photos/stavanger/stav4.jpg">
-    <img src="photos/stavanger/stav5.jpg">
-    <img src="photos/stavanger/stav6.jpg">
-    <img src="photos/stavanger/stav7.jpg">
-    <img src="photos/stavanger/stav8.jpg">
-    <img src="photos/stavanger/stav9.jpg">
-    <img src="photos/stavanger/stav10.jpg">
+       data-loop="true"
+       data-allowfullscreen="true">
+       
+    <img src="photos/stavanger/stav1.jpg" alt="Photo 1">
+    <img src="photos/stavanger/stav2.jpg" alt="Photo 2">
+    <img src="photos/stavanger/stav3.jpg" alt="Photo 3">
+    <img src="photos/stavanger/stav4.jpg" alt="Photo 4">
+    <img src="photos/stavanger/stav5.jpg" alt="Photo 5">
+    <img src="photos/stavanger/stav6.jpg" alt="Photo 6">
+    <img src="photos/stavanger/stav7.jpg" alt="Photo 7">
+    <img src="photos/stavanger/stav8.jpg" alt="Photo 8">
+    <img src="photos/stavanger/stav9.jpg" alt="Photo 9">
+    <img src="photos/stavanger/stav10.jpg" alt="Photo 10">
   </div>
+
 </body>
 </html>
