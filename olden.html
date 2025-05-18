@@ -21,10 +21,12 @@
     }
     .fotorama {
       margin: 0 auto;
-      max-width: 90%;
+      width: 90vw;
+      height: 80vh;
+      max-width: 100%;
     }
     .slideshow-controls {
-      margin-top: 15px;
+      margin: 15px 0;
     }
     .slideshow-button {
       background-color: #28a745;
@@ -42,8 +44,7 @@
 
   <div class="fotorama"
        id="fotorama"
-       data-width="100%"
-       data-fit="contain"
+       data-fit="cover"
        data-nav="thumbs"
        data-autoplay="3000"
        data-loop="true"
