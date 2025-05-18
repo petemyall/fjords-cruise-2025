@@ -23,19 +23,31 @@
       margin: 0 auto;
       max-width: 90%;
     }
+    .slideshow-controls {
+      margin-top: 15px;
+    }
+    .slideshow-button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <h1>STAVANGER SLIDESHOW</h1>
 
   <div class="fotorama"
+       id="fotorama"
        data-width="100%"
        data-fit="contain"
        data-nav="thumbs"
        data-autoplay="3000"
        data-loop="true"
        data-allowfullscreen="true"
-       data-stopautoplayontouch="false"
        data-keyboard="true"
        data-arrows="true"
        data-click="true">
@@ -50,5 +62,25 @@
     <img src="photos/stavanger/stav9.jpg">
     <img src="photos/stavanger/stav10.jpg">
   </div>
+
+  <div class="slideshow-controls">
+    <button class="slideshow-button" id="toggle-autoplay">Pause</button>
+  </div>
+
+  <script>
+    const $fotoramaDiv = $('#fotorama');
+    const fotorama = $fotoramaDiv.fotorama().data('fotorama');
+    const button = document.getElementById('toggle-autoplay');
+
+    button.addEventListener('click', () => {
+      if (fotorama.autoPlay) {
+        fotorama.stopAutoplay();
+        button.textContent = 'Play';
+      } else {
+        fotorama.startAutoplay(3000);
+        button.textContent = 'Pause';
+      }
+    });
+  </script>
 </body>
 </html>
