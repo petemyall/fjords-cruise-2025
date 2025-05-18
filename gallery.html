@@ -6,43 +6,32 @@
   <title>Cruise Gallery</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .gallery-container {
+    .button-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
+      margin: 30px auto;
+      max-width: 600px;
     }
 
-    .gallery-img {
-      width: 30%;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
+    .gallery-button {
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      flex: 1 1 30%;
+      text-align: center;
     }
 
-    .gallery-img:nth-child(2) {
-      transform: rotate(-2deg) translateY(10px);
-    }
-
-    .gallery-img:nth-child(3) {
-      transform: rotate(2deg) translateY(-10px);
-    }
-
-    @media (max-width: 768px) {
-      .gallery-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .gallery-img {
-        width: 80%;
-        margin: 10px 0;
-      }
-
-      .gallery-img:nth-child(2),
-      .gallery-img:nth-child(3) {
-        transform: none;
+    @media (max-width: 500px) {
+      .gallery-button {
+        font-size: 16px;
+        padding: 15px 20px;
       }
     }
   </style>
@@ -60,38 +49,22 @@
   </nav>
 
   <div class="description-box">
-    <p class="center-text">Here are some pictures of our holiday cruise to the magnificent Norwegian Fjords.</p>
+    <p class="center-text">Here are some of our pictures of the magnificent Fjords.</p>
   </div>
 
-  <!-- Image Gallery -->
-  <div class="gallery-container">
+  <div style="text-align: center; margin-bottom: 20px;">
     <img src="images/photo1.jpg" alt="Stavanger" class="gallery-img">
     <img src="images/photo2.jpg" alt="Ålesund" class="gallery-img">
     <img src="images/photo3.jpg" alt="Olden" class="gallery-img">
   </div>
 
-  <!-- Button Links Section -->
-  <div style="text-align: center; margin: 30px 0;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 750px; margin: 0 auto;">
-      <a href="https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
-        Sailaway 👆
-      </a>
-      <a href="https://photos.app.goo.gl/uVsCjQH1e6TE3U21A" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
-        Sea Days 👆
-      </a>
-      <a href="stavanger.html" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
-        Stavanger 👆
-      </a>
-      <a href="https://photos.app.goo.gl/2xx8fPj3EGJ1U15Q9" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
-        Ålesund 👆
-      </a>
-      <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
-        Olden 👆
-      </a>
-      <a href="https://photos.app.goo.gl/GKWjwuvZofLfR25v7" target="_blank" style="flex: 1 1 25%; min-width: 200px; padding: 20px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
-        Haugesund 👆
-      </a>
-    </div>
+  <div class="button-grid">
+    <a href="sailaway.html" class="gallery-button">Sailaway</a>
+    <a href="stavanger.html" class="gallery-button">Stavanger</a>
+    <a href="alesund.html" class="gallery-button">Ålesund</a>
+    <a href="olden.html" class="gallery-button">Olden</a>
+    <a href="haugesund.html" class="gallery-button">Haugesund</a>
+    <a href="seadays.html" class="gallery-button">Sea Days</a>
   </div>
 
 </body>
