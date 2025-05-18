@@ -28,65 +28,73 @@
       text-align: center;
     }
 
-    .fan-layout {
+    .gallery-fan {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 0;
+      margin: 30px 0;
       position: relative;
-      width: 280px;
-      height: 180px;
-      margin: 0 auto 40px;
+      height: 160px;
     }
 
-    .fan-layout img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 90%;
+    .gallery-img {
+      width: 100px;
       height: auto;
-      transform-origin: bottom center;
-      transition: transform 0.3s ease;
-      border-radius: 8px;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      position: absolute;
+      transition: transform 0.3s;
     }
 
-    .fan-layout img:nth-child(1) {
-      transform: rotate(-15deg) translateX(-60px);
+    .gallery-img:nth-child(1) {
+      transform: rotate(-15deg) translateX(-120px);
       z-index: 1;
     }
 
-    .fan-layout img:nth-child(2) {
+    .gallery-img:nth-child(2) {
       transform: rotate(0deg);
       z-index: 2;
     }
 
-    .fan-layout img:nth-child(3) {
-      transform: rotate(15deg) translateX(60px);
+    .gallery-img:nth-child(3) {
+      transform: rotate(15deg) translateX(120px);
       z-index: 1;
     }
 
     @media (max-width: 600px) {
-      .fan-layout {
-        width: 200px;
-        height: 130px;
+      .gallery-img {
+        width: 70px;
       }
 
-      .fan-layout img {
-        width: 100%;
+      .gallery-img:nth-child(1) {
+        transform: rotate(-12deg) translateX(-80px);
       }
 
-      .fan-layout img:nth-child(1) {
-        transform: rotate(-12deg) translateX(-40px);
+      .gallery-img:nth-child(3) {
+        transform: rotate(12deg) translateX(80px);
       }
 
-      .fan-layout img:nth-child(2) {
-        transform: rotate(0deg);
+      .gallery-fan {
+        height: 120px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .gallery-img {
+        width: 55px;
       }
 
-      .fan-layout img:nth-child(3) {
-        transform: rotate(12deg) translateX(40px);
+      .gallery-img:nth-child(1) {
+        transform: rotate(-10deg) translateX(-60px);
       }
 
-      .gallery-button {
-        font-size: 16px;
-        padding: 12px 18px;
+      .gallery-img:nth-child(3) {
+        transform: rotate(10deg) translateX(60px);
+      }
+
+      .gallery-fan {
+        height: 100px;
       }
     }
   </style>
@@ -107,10 +115,10 @@
     <p class="center-text">Here are some of our pictures of the magnificent Fjords.</p>
   </div>
 
-  <div class="fan-layout">
-    <img src="images/photo1.jpg" alt="Stavanger">
-    <img src="images/photo2.jpg" alt="Ålesund">
-    <img src="images/photo3.jpg" alt="Olden">
+  <div class="gallery-fan">
+    <img src="images/photo1.jpg" alt="Stavanger" class="gallery-img">
+    <img src="images/photo2.jpg" alt="Ålesund" class="gallery-img">
+    <img src="images/photo3.jpg" alt="Olden" class="gallery-img">
   </div>
 
   <div class="button-grid">
