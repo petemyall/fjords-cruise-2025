@@ -64,7 +64,7 @@
   </div>
 
   <div class="slideshow-controls">
-    <button class="slideshow-button" id="toggle-autoplay">Play/Pause</button>
+    <button class="slideshow-button" id="toggle-autoplay">Pause</button>
   </div>
 
   <script>
@@ -80,6 +80,7 @@
         button.textContent = 'Play';
       } else {
         fotorama.startAutoplay(3000);
+        fotorama.show('>'); // Skip to next slide for instant feedback
         button.textContent = 'Pause';
       }
       isPlaying = !isPlaying;
