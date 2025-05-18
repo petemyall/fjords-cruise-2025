@@ -35,6 +35,17 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    .album-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
@@ -65,15 +76,19 @@
     <img src="photos/olden/olden (10).jpg">
   </div>
 
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
+  <div class="slideshow-controls">
+    <button class="slideshow-button" id="toggle-autoplay">Pause</button>
+  </div>
+
+  <div>
+    <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5" target="_blank" class="album-link">
       CHECK OUT ALL THE OLDEN PICTURES HERE 📸
     </a>
+  </div>
 
   <script>
     const $fotoramaDiv = $('#fotorama');
     let isPlaying = true;
-
     const fotorama = $fotoramaDiv.fotorama().data('fotorama');
     const button = document.getElementById('toggle-autoplay');
 
@@ -89,8 +104,5 @@
       isPlaying = !isPlaying;
     });
   </script>
-  <div class="button-grid">
-    <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5"</a>
-  </div>
 </body>
 </html>
