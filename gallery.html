@@ -28,10 +28,53 @@
       text-align: center;
     }
 
+    .fan-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 40px 0;
+      position: relative;
+      height: 180px;
+    }
+
+    .gallery-img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      position: absolute;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-img:nth-child(1) {
+      transform: rotate(-15deg) translateX(-120px);
+      z-index: 1;
+    }
+
+    .gallery-img:nth-child(2) {
+      transform: rotate(0deg) translateX(0px);
+      z-index: 2;
+    }
+
+    .gallery-img:nth-child(3) {
+      transform: rotate(15deg) translateX(120px);
+      z-index: 1;
+    }
+
     @media (max-width: 500px) {
       .gallery-button {
         font-size: 16px;
         padding: 15px 20px;
+      }
+
+      .fan-container {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .gallery-img {
+        position: static;
+        transform: none !important;
+        margin: 10px 0;
       }
     }
   </style>
@@ -52,7 +95,7 @@
     <p class="center-text">Here are some of our pictures of the magnificent Fjords.</p>
   </div>
 
-  <div style="text-align: center; margin-bottom: 20px;">
+  <div class="fan-container">
     <img src="images/photo1.jpg" alt="Stavanger" class="gallery-img">
     <img src="images/photo2.jpg" alt="Ålesund" class="gallery-img">
     <img src="images/photo3.jpg" alt="Olden" class="gallery-img">
