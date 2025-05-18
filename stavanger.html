@@ -64,22 +64,25 @@
   </div>
 
   <div class="slideshow-controls">
-    <button class="slideshow-button" id="toggle-autoplay">Re-start</button>
+    <button class="slideshow-button" id="toggle-autoplay">Play/Pause</button>
   </div>
 
   <script>
     const $fotoramaDiv = $('#fotorama');
+    let isPlaying = true;
+
     const fotorama = $fotoramaDiv.fotorama().data('fotorama');
     const button = document.getElementById('toggle-autoplay');
 
     button.addEventListener('click', () => {
-      if (fotorama.autoPlay) {
+      if (isPlaying) {
         fotorama.stopAutoplay();
         button.textContent = 'Play';
       } else {
         fotorama.startAutoplay(3000);
         button.textContent = 'Pause';
       }
+      isPlaying = !isPlaying;
     });
   </script>
 </body>
