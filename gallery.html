@@ -28,53 +28,65 @@
       text-align: center;
     }
 
-    .fan-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0 40px 0;
+    .fan-layout {
       position: relative;
+      width: 280px;
       height: 180px;
+      margin: 0 auto 40px;
     }
 
-    .gallery-img {
-      width: 150px;
-      height: auto;
-      border-radius: 10px;
+    .fan-layout img {
       position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: auto;
+      transform-origin: bottom center;
       transition: transform 0.3s ease;
+      border-radius: 8px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    .gallery-img:nth-child(1) {
-      transform: rotate(-15deg) translateX(-120px);
+    .fan-layout img:nth-child(1) {
+      transform: rotate(-15deg) translateX(-60px);
       z-index: 1;
     }
 
-    .gallery-img:nth-child(2) {
-      transform: rotate(0deg) translateX(0px);
+    .fan-layout img:nth-child(2) {
+      transform: rotate(0deg);
       z-index: 2;
     }
 
-    .gallery-img:nth-child(3) {
-      transform: rotate(15deg) translateX(120px);
+    .fan-layout img:nth-child(3) {
+      transform: rotate(15deg) translateX(60px);
       z-index: 1;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
+      .fan-layout {
+        width: 200px;
+        height: 130px;
+      }
+
+      .fan-layout img {
+        width: 100%;
+      }
+
+      .fan-layout img:nth-child(1) {
+        transform: rotate(-12deg) translateX(-40px);
+      }
+
+      .fan-layout img:nth-child(2) {
+        transform: rotate(0deg);
+      }
+
+      .fan-layout img:nth-child(3) {
+        transform: rotate(12deg) translateX(40px);
+      }
+
       .gallery-button {
         font-size: 16px;
-        padding: 15px 20px;
-      }
-
-      .fan-container {
-        flex-direction: column;
-        height: auto;
-      }
-
-      .gallery-img {
-        position: static;
-        transform: none !important;
-        margin: 10px 0;
+        padding: 12px 18px;
       }
     }
   </style>
@@ -95,10 +107,10 @@
     <p class="center-text">Here are some of our pictures of the magnificent Fjords.</p>
   </div>
 
-  <div class="fan-container">
-    <img src="images/photo1.jpg" alt="Stavanger" class="gallery-img">
-    <img src="images/photo2.jpg" alt="Ålesund" class="gallery-img">
-    <img src="images/photo3.jpg" alt="Olden" class="gallery-img">
+  <div class="fan-layout">
+    <img src="images/photo1.jpg" alt="Stavanger">
+    <img src="images/photo2.jpg" alt="Ålesund">
+    <img src="images/photo3.jpg" alt="Olden">
   </div>
 
   <div class="button-grid">
