@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stavanger SLIDESHOW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <style>
+    body {
+      background-color: #aefcfc;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px;
+      font-size: 2em;
+    }
+    .fotorama {
+      margin: 0 auto 30px auto;
+      max-width: 90vw;
+    }
+    .slideshow-controls {
+      margin: 15px 0;
+    }
+    .slideshow-button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stavanger SLIDESHOW</h1>
+
+  <div class="fotorama"
+       id="fotorama"
+       data-width="100%"
+       data-ratio="16/9"
+       data-maxheight="600"
+       data-fit="contain"
+       data-nav="thumbs"
+       data-autoplay="3000"
+       data-loop="true"
+       data-allowfullscreen="true"
+       data-keyboard="true"
+       data-arrows="true"
+       data-click="true">
+    <img src="photos/stavanger/stava (1).jpg">
+    <img src="photos/stavanger/stava (2).jpg">
+    <img src="photos/stavanger/stava (3).jpg">
+    <img src="photos/stavanger/stava (4).jpg">
+    <img src="photos/stavanger/stava (5).jpg">
+    <img src="photos/stavanger/stava (6).jpg">
+    <img src="photos/stavanger/stava (7).jpg">
+    <img src="photos/stavanger/stava (8).jpg">
+    <img src="photos/stavanger/stava (9).jpg">
+    <img src="photos/stavanger/stava (10).jpg">
+  </div>
+
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="https://photos.app.goo.gl/MYSTERY2" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
+      CHECK OUT ALL THE STAVANGER PICTURES HERE 📸
+    </a>
+  </div>
+
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="gallery.html" style="display: inline-block; padding: 10px 20px; background-color: #ff9900; color: white; text-decoration: none; border-radius: 5px; font-size: 20px; font-weight: bold;">
+      ← Back to Gallery
+    </a>
+  </div>
+
+  <div class="slideshow-controls">
+    <button class="slideshow-button" id="toggle-autoplay">Pause</button>
+  </div>
+
+  <script>
+    const $fotoramaDiv = $('#fotorama');
+    let isPlaying = true;
+
+    const fotorama = $fotoramaDiv.fotorama().data('fotorama');
+    const button = document.getElementById('toggle-autoplay');
+
+    button.addEventListener('click', () => {
+      if (isPlaying) {
+        fotorama.stopAutoplay();
+        button.textContent = 'Play';
+      } else {
+        fotorama.startAutoplay(3000);
+        fotorama.show('>');
+        button.textContent = 'Pause';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
