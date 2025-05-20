@@ -5,91 +5,93 @@
   <title>Menus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-
- <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-  body {
-    background: url('menus.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: white;
-  }
-
-  h1 {
-    margin-top: 20px;
-    font-size: 2em;
-    text-shadow: 2px 2px 4px #000;
-  }
-
-  nav {
-    margin: 15px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0 10px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 8px 14px;
-    border-radius: 5px;
-  }
-
-  .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .gallery-item {
-    max-width: 280px;
-    width: 100%;
-    border: 5px solid white;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .caption {
-    padding: 8px;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.85);
-    color: #325a96;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-  }
-
-  @media (max-width: 1024px) {
-    .gallery-item {
-      max-width: 45%;
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('menus.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: white;
     }
-  }
 
-  @media (max-width: 600px) {
-    .gallery-item {
-      max-width: 90%;
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px #000;
     }
-  }
-</style>
+
+    nav {
+      margin: 15px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 8px 14px;
+      border-radius: 5px;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      border: 5px solid white;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .caption {
+      padding: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #325a96;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      border-radius: 0 0 10px 10px;
+    }
+
+    @media (min-width: 1025px) {
+      .gallery-item {
+        width: 30%;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+      .gallery-item {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 599px) {
+      .gallery-item {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Menus from the Cruise</h1>
