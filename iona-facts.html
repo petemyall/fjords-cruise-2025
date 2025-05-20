@@ -1,86 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fun Facts About Iona</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>P&O Iona Fun Facts</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      background: url('background.jpg') no-repeat center center fixed;
+      background: url('images/ship.png') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
       color: white;
-      text-align: center;
-    }
+      text-shadow: 1px 1px 2px black;
+    }h1 {
+  text-align: center;
+  margin: 20px;
+}
 
-    h1 {
-      margin: 30px 0 10px;
-      font-size: 2.5em;
-      text-shadow: 2px 2px 4px #000;
-    }
+.facts-box {
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-    nav {
-      margin: 15px;
-    }
+.fact {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
 
-    nav a {
-      display: inline-block;
-      margin: 0 10px;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 10px 16px;
-      border-radius: 8px;
-    }
+nav {
+  text-align: center;
+  margin: 20px;
+}
 
-    .facts-container {
-      max-width: 800px;
-      margin: 30px auto;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 3px 3px 12px rgba(0,0,0,0.6);
-    }
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 14px;
+  border-radius: 5px;
+}
 
-    .fact {
-      margin: 20px 0;
-      font-size: 1.3em;
-      line-height: 1.5;
-    }
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
 
-    .fact::before {
-      content: "• ";
-      color: #ffd700;
-      font-size: 1.2em;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2em; }
-      .fact { font-size: 1.1em; }
-    }
   </style>
 </head>
 <body>
-  <h1>Fun Facts About P&O Iona</h1>
-
-  <nav>
+  <h1>Fun Facts About P&O Iona</h1>  <div class="facts-box">
+    <div class="fact">1. Iona can carry up to 5,200 guests – that’s more than some small towns!</div>
+    <div class="fact">2. The ship has 15 guest decks and over 30 places to eat and drink.</div>
+    <div class="fact">3. Powered by liquefied natural gas (LNG), she’s one of the greenest cruise ships afloat.</div>
+    <div class="fact">4. The SkyDome is a glass-roofed entertainment venue with a pool that transforms into a stage.</div>
+    <div class="fact">5. There’s a whole gin distillery onboard – cheers to that!</div>
+    <div class="fact">6. Iona was named by the Duchess of Cornwall in 2021 – virtually!</div>
+    <div class="fact">7. She stretches 344 metres long – that’s about three and a half football pitches.</div>
+    <div class="fact">8. Her maiden voyage was to the Canary Islands in August 2021.</div>
+  </div>  <nav>
     <a href="index.html">🏠 Home</a>
-    <a href="gallery.html">🖼 Gallery</a>
-    <a href="menus.html">📜 Menus</a>
-  </nav>
-
-  <div class="facts-container">
-    <div class="fact">Launched in 2020, Iona is one of the greenest ships afloat, powered by LNG (liquefied natural gas).</div>
-    <div class="fact">She’s over 344 metres long — that’s longer than the Eiffel Tower is tall!</div>
-    <div class="fact">Iona can host more than 5,200 passengers and over 1,700 crew members.</div>
-    <div class="fact">The SkyDome offers all-weather entertainment with a retractable glass roof.</div>
-    <div class="fact">There's a gin distillery on board — the first at sea!</div>
-    <div class="fact">Named after the Scottish island of Iona — known for peace, beauty, and a touch of history.</div>
-    <div class="fact">You can enjoy more than 30 dining and drinking venues — but don’t try them all in one night!</div>
-  </div>
+    <a href="gallery.html">📸 Gallery</a>
+  </nav>  <footer>
+    © Norwegian Fjords Cruise 2025
+  </footer>
 </body>
 </html>
