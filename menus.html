@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('menus.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: white;
+    }
 
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .gallery-item {
+      width: calc(33% - 20px);
+      border: 5px solid white;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+      border-radius: 10px;
+      background: rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      padding: 8px;
+      font-size: 1em;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #000;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 900px) {
+      .gallery-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery-item {
+        width: 90%;
+      }
+    }
+
+    nav {
+      margin: 15px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 8px 14px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menus from the Cruise</h1>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="gallery.html">🖼 Gallery</a>
+  </nav>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <a href="photos/menus/menu (1).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (1).jpg" alt="Menu 1">
+      </a>
+      <div class="caption">Sailaway</div>
+    </div>
+    <div class="gallery-item">
+      <a href="photos/menus/menu (2).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (2).jpg" alt="Menu 2">
+      </a>
+      <div class="caption">Stavanger</div>
+    </div>
+    <div class="gallery-item">
+      <a href="photos/menus/menu (3).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (3).jpg" alt="Menu 3">
+      </a>
+      <div class="caption">Olden</div>
+    </div>
+    <div class="gallery-item">
+      <a href="photos/menus/menu (4).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (4).jpg" alt="Menu 4">
+      </a>
+      <div class="caption">Ålesund</div>
+    </div>
+    <div class="gallery-item">
+      <a href="photos/menus/menu (5).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (5).jpg" alt="Menu 5">
+      </a>
+      <div class="caption">SeaDay</div>
+    </div>
+    <div class="gallery-item">
+      <a href="photos/menus/menu (6).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (6).jpg" alt="Menu 6">
+      </a>
+      <div class="caption">Chef</div>
+    </div>
+    <div class="gallery-item">
+      <a href="photos/menus/menu (7).jpg" data-lightbox="menus">
+        <img src="photos/menus/menu (7).jpg" alt="Menu 7">
+      </a>
+      <div class="caption">Finale</div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+                                                                                             </html>
