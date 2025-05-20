@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun Facts About Iona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('facts-background.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    nav {
+      margin: 15px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 8px 14px;
+      border-radius: 5px;
+    }
+
+    .facts-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .fact {
+      margin: 15px 0;
+      font-size: 1.3em;
+    }
+
+    .fact::before {
+      content: "• ";
+      color: #ffc107;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .fact { font-size: 1.1em; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Fun Facts About P&O Iona</h1>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="gallery.html">🖼 Gallery</a>
+    <a href="menus.html">📜 Menus</a>
+  </nav>
+
+  <div class="facts-container">
+    <div class="fact">Launched in 2020, Iona is one of the greenest ships afloat, powered by LNG (liquefied natural gas).</div>
+    <div class="fact">She’s over 344 metres long — that’s longer than the Eiffel Tower is tall!</div>
+    <div class="fact">Iona can host more than 5,200 passengers and over 1,700 crew members.</div>
+    <div class="fact">The SkyDome offers all-weather entertainment with a retractable glass roof.</div>
+    <div class="fact">There's a gin distillery on board — the first at sea!</div>
+    <div class="fact">Named after the Scottish island of Iona — known for peace, beauty, and a touch of history.</div>
+    <div class="fact">You can enjoy more than 30 dining and drinking venues — but don’t try them all in one night!</div>
+  </div>
+</body>
+</html>
