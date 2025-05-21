@@ -139,3 +139,28 @@ nav a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }
+  nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000; /* or whatever suits your theme */
+  font-weight: bold;
+  background: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #d0f0ff;
+}
