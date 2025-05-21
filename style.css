@@ -1,145 +1,28 @@
-/* === Global Styles === */
+/* Basic page styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e0e0e0; /* Fallback if image fails */
-  background-image: url('iona-image.jpg'); /* Ensure correct filename & path */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white; /* Default text colour */
-}
-
-/* === Headings === */
-h1, h2 {
   text-align: center;
-  color: #9bbdde; /* Softer blue for readability */
 }
 
-/* === Navigation Styles === */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
-  gap: 15px; /* Adds spacing between buttons */
-  margin: 20px 0;
-}
-
-nav a {
-  display: inline-block;
-  padding: 15px 25px;
-  background-color: #007BFF;
-  color: #cce6ff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  font-size: 18px;
-  min-width: 100px; /* Ensures reasonable size on small screens */
-}
-
-nav a:hover {
-  background-color: #0056b3;
-  color: white;
-}
-/* === Gallery Page Specific Text Sizes === */
+/* Description text centering */
 .center-text {
   text-align: center;
 }
 
-/* Icons and labels inside nav buttons */
-.nav-icon {
-  font-size: 40px;
-}
-
-.nav-label {
-  font-size: 20px;
-}
-
-/* === Responsive Typography for small screens === */
-@media (max-width: 600px) {
-  body {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  p, li, nav a, .nav-label {
-    font-size: 18px;
-  }
-
-  .nav-icon {
-    font-size: 36px;
-  }
-  @media (max-width: 600px) {
-  nav a {
-    transform: scale(0.75);
-    transform-origin: center;
-  }
-  }
-}
-
-/* === Content Box Styling === */
+/* Description box styling */
 .description-box {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5); /* Soft white with 50% transparency */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.description-box h2 {
-  color: #003366; /* Deep blue */
-  margin-bottom: 15px;
-}
-
-.description-box p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* === Image Gallery Styling === */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5em; /* Slightly larger
-  /* === Responsive Typography for small screens === */
-@media (max-width: 600px) {
-  body {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  p, li, nav a {
-    font-size: 18px;
-  }
-}
-  .gallery-img {
-  width: 45%;
-  max-width: 250px;
-  margin-bottom: 15px;
+  background-color: #ffffffcc;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  }
-  nav {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Navigation bar styling */
+.nav-bar {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -147,20 +30,27 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-nav a {
+.nav-bar a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  color: #000; /* or whatever suits your theme */
-  font-weight: bold;
-  background: none;
+  justify-content: center;
   padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
   border-radius: 8px;
-  font-size: 18px;
-  transition: background 0.2s;
+  width: 70px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-nav a:hover {
-  background: #d0f0ff;
+.nav-bar a:hover {
+  background-color: #005f8f;
+}
+
+/* Responsive image handling */
+img {
+  max-width: 100%;
+  height: auto;
 }
