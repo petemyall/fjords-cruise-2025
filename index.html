@@ -86,7 +86,7 @@
     // Scroll-triggered parallax background effect starting ~20% down
     window.addEventListener('scroll', function () {
       const scrollY = window.scrollY;
-      const triggerPoint = window.innerHeight * 0.3;
+      const triggerPoint = window.innerHeight * 0.2;
       if (scrollY > triggerPoint) {
         const offset = (scrollY - triggerPoint) * 0.3;
         document.body.style.backgroundPosition = `center ${-offset}px`;
