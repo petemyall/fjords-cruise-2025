@@ -36,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #0077b6;
+  background-color: rgba(0, 119, 182, 0.8); /* semi-transparent blue */
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-bar a:hover {
-  background-color: #005f8f;
+  background-color: rgba(0, 95, 143, 0.9); /* darker on hover */
 }
 
 /* Responsive image handling */
