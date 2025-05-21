@@ -1,135 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cruise Gallery</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery – Norwegian Fjords Cruise 2025</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    .button-grid {
+    body {
+      background: url('images/gallery-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .description-box {
+      background: rgba(173, 216, 230, 0.85); /* pale blue */
+      color: #00274d; /* dark blue */
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      transform: translateY(20%);
+    }
+
+    .gallery-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
-      margin: 30px auto;
-      max-width: 600px;
+      padding: 20px;
     }
 
-    .gallery-button {
-      display: inline-block;
-      padding: 20px 30px;
-      background-color: #28a745;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 20px;
-      font-weight: bold;
-      flex: 1 1 30%;
-      text-align: center;
-    }
-
-    .gallery-fan {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 0;
-      margin: 30px 0;
-      position: relative;
-      height: 160px;
-    }
-
-    .gallery-img {
-      width: 100px;
-      height: auto;
+    .gallery-item {
+      width: calc(33% - 20px);
+      border: 4px solid white;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      position: absolute;
-      transition: transform 0.3s;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      background: rgba(0, 0, 0, 0.3);
     }
 
-    .gallery-img:nth-child(1) {
-      transform: rotate(-15deg) translateX(-120px);
-      z-index: 1;
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
-    .gallery-img:nth-child(2) {
-      transform: rotate(0deg);
-      z-index: 2;
-    }
-
-    .gallery-img:nth-child(3) {
-      transform: rotate(15deg) translateX(120px);
-      z-index: 1;
+    @media (max-width: 900px) {
+      .gallery-item {
+        width: calc(50% - 20px);
+      }
     }
 
     @media (max-width: 600px) {
-      .gallery-img {
-        width: 70px;
-      }
-
-      .gallery-img:nth-child(1) {
-        transform: rotate(-12deg) translateX(-80px);
-      }
-
-      .gallery-img:nth-child(3) {
-        transform: rotate(12deg) translateX(80px);
-      }
-
-      .gallery-fan {
-        height: 120px;
+      .gallery-item {
+        width: 90%;
       }
     }
 
-    @media (max-width: 400px) {
-      .gallery-img {
-        width: 55px;
-      }
+    nav {
+      text-align: center;
+      margin: 20px;
+    }
 
-      .gallery-img:nth-child(1) {
-        transform: rotate(-10deg) translateX(-60px);
-      }
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 8px 14px;
+      border-radius: 5px;
+    }
 
-      .gallery-img:nth-child(3) {
-        transform: rotate(10deg) translateX(60px);
-      }
-
-      .gallery-fan {
-        height: 100px;
-      }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 30px;
     }
   </style>
 </head>
+<body>
 
-<body style="background-color: #aefcfc;">
+  <h1>Gallery of Memories</h1>
 
-  <h1>P&O Iona Norwegian Fjords</h1>
-  <h1>Photo Gallery</h1>
+  <div class="description-box">
+    <p>Here’s a collection of moments from our unforgettable cruise — not just the stunning fjords, but also glorious weather, elegant cocktails, fine dining, breathtaking views from the Loen Skylift, a thrilling RIB safari to Haugesund’s offshore communities, and, best of all, the wonderful company we shared it all with.</p>
+  </div>
 
-  <nav class="nav-bar">
+  <div class="gallery-container">
+    <!-- Example gallery items — update filenames and captions as needed -->
+    <div class="gallery-item">
+      <img src="photos/gallery/photo1.jpg" alt="Cruise memory 1">
+    </div>
+    <div class="gallery-item">
+      <img src="photos/gallery/photo2.jpg" alt="Cruise memory 2">
+    </div>
+    <div class="gallery-item">
+      <img src="photos/gallery/photo3.jpg" alt="Cruise memory 3">
+    </div>
+    <!-- Add more images as needed -->
+  </div>
+
+  <nav>
     <a href="index.html">🏠<br>HOME</a>
     <a href="logbook.html">📒<br>LOG</a>
     <a href="videos.html">🎬<br>VIDEOS</a>
     <a href="map.html">🗺️<br>MAP</a>
+    <a href="iona-facts.html">🛳️<br>IONA FACTS</a>
+    <a href="fjord-facts.html">🏞️<br>FJORD FACTS</a>
   </nav>
 
-  <div class="description-box">
-    <p class="center-text">Step aboard the Iona and relive our scenic Norwegian adventure, one port at a time.</p>
-  </div>
-
-  <div class="gallery-fan">
-    <img src="images/photo1.jpg" alt="Stavanger" class="gallery-img">
-    <img src="images/photo2.jpg" alt="Ålesund" class="gallery-img">
-    <img src="images/photo3.jpg" alt="Olden" class="gallery-img">
-  </div>
-
-  <div class="button-grid">
-    <a href="sailaway.html" class="gallery-button">Sailaway and Sea Days</a>
-    <a href="stavanger.html" class="gallery-button">Stavanger</a>
-    <a href="alesund.html" class="gallery-button">Ålesund</a>
-    <a href="olden.html" class="gallery-button">Olden</a>
-    <a href="haugesund.html" class="gallery-button">Haugesund</a>
-    <a href="menus.html" class="gallery-button">Cruise Menus</a>
-  </div>
+  <footer>
+    © Norwegian Fjords Cruise 2025
+  </footer>
 
 </body>
 </html>
