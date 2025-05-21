@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to a Record of Our First Cruise</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json"> <!-- for PWA -->
+
   <style>
     body {
-      background: url(iona-image.jpg) no-repeat center center fixed;
+      background: url(iona-image.png) no-repeat center center fixed;
       background-size: cover;
+      background-attachment: fixed;
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      color: white;
-      text-shadow: 1px 1px 2px black;
+      color: #f9f9f9;
+      text-shadow: 1px 1px 2px #000;
     }
 
     h1 {
@@ -32,12 +34,15 @@
     }
 
     .description-box {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(255, 255, 255, 0.75);
+      color: #000;
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
       border-radius: 10px;
       font-size: 1.1em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      animation: fadeIn 1.5s ease;
     }
 
     nav {
@@ -51,11 +56,12 @@
       color: white;
       font-weight: bold;
       text-decoration: none;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       padding: 10px 16px;
       border-radius: 8px;
       width: 100px;
       vertical-align: top;
+      transition: background 0.3s ease;
     }
 
     nav a:hover {
@@ -68,8 +74,14 @@
       padding: 10px;
       background: rgba(0, 0, 0, 0.4);
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
+
 <body>
 
   <h1>Welcome to Our Fjords Cruise 2025</h1>
@@ -79,7 +91,7 @@
   </div>
 
   <div class="description-box">
-    <p>Step aboard as we set sail through this digital scrapbook of our unforgettable P&O Cruise to the stunning Norwegian Fjords in May 2025. This was a very special voyage – the first cruise ever for our daughter Joanne and her husband Luke – and we were blessed with fabulous weather from start to finish. From majestic scenery to mouth-watering food and drink, every day was a treat. Tap below to dive into our photos, journal entries, videos, route map, and some fun facts along the way!</p>
+    <p>Step aboard our digital scrapbook from the breathtaking Norwegian Fjords in May 2025 — a voyage to remember! This was our first cruise with Joanne and Luke, who embraced every wave with wide-eyed wonder. From glorious sunshine on deck to indulgent meals and cocktails aplenty, this holiday served up stunning views and unforgettable memories. Tap a button below to dive into the sights, stories, and sparkle of our journey.</p>
   </div>
 
   <nav>
