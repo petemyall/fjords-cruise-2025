@@ -1,92 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cruise Logbook</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cruise Logbook – Norwegian Fjords Cruise 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: url('images/iona-flag-mountains.jpg') center center no-repeat;
+      background-size: cover;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #003366;
+      text-shadow: 1px 1px 2px #ffffff55;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .description-box {
+      background: rgba(173, 216, 230, 0.85);
+      color: #002244;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      animation: fadeIn 1.5s ease;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 16px;
+      border-radius: 8px;
+      width: 100px;
+      vertical-align: top;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .journal-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body style="background-color: #aefcfc;">
 
-  <h1 style="text-align: center;"> P&O Iona Norwegian Fjords</h1>
-  <h1 style="text-align: center;"> Cruise Logbook</h1>
+<body>
 
-<nav>
+  <h1>P&O Iona Norwegian Fjords</h1>
+  <h1>Cruise Logbook</h1>
+
+  <nav>
     <a href="index.html">🏠<br>HOME</a>
     <a href="gallery.html">📸<br>GALLERY</a>
     <a href="videos.html">🎬<br>VIDEOS</a>
     <a href="map.html">🗺️<br>MAP</a>
+    <a href="iona-facts.html">🛳️<br>IONA FACTS</a>
+    <a href="fjord-facts.html">🏞️<br>FJORD FACTS</a>
   </nav>
 
   <div class="description-box">
-  <h2>Day 1: Southampton (UK)</h2>
-  <p>Departure from Ocean Terminal, Southampton.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/1Fd7IoplmiBnH8yIqa5FrOpfMpy-Y4nNqrzPxQBHq-6A/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
-  </div>
-  </div>
-
-  <div class="description-box">
-  <h2>Day 2: At Sea</h2>
-  <p>A relaxing day at sea as we sailed north towards Norway.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/1baahQglnB_YACa4c0JbGRvYM8eLNAabfcGkeB2IluZc/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
-  </div>
+    <h2>Day 1: Southampton (UK)</h2>
+    <p>Departure from Ocean Terminal, Southampton.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/1Fd7IoplmiBnH8yIqa5FrOpfMpy-Y4nNqrzPxQBHq-6A/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
   </div>
 
   <div class="description-box">
-  <h2>Day 3: Stavanger (Norway)</h2>
-  <p>Our first port of call was Stavanger, where we explored the picturesque old town and harbour area.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/1iNF4ejHThw8FZkcby9pBJRD-OADXRIlssgzRfiLCqxU/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
-  </div>
-  </div>
-
-  <div class="description-box">
-  <h2>Day 4: Ålesund (Norway)</h2>
-  <p>Ålesund welcomed us with its striking Art Nouveau architecture.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/1ar2MQiy-cm8QocBNxQZgz5sqC0Pvpw68ifZ6lRZG9gs/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
-  </div>
+    <h2>Day 2: At Sea</h2>
+    <p>A relaxing day at sea as we sailed north towards Norway.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/1baahQglnB_YACa4c0JbGRvYM8eLNAabfcGkeB2IluZc/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
   </div>
 
   <div class="description-box">
-  <h2>Day 5: Olden & Innvikfjorden (Norway)</h2>
-  <p>Today we sailed through the breathtaking Innvikfjorden and visited the village of Olden.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/11sSg1retpynLX28-Xvvl0TEc-ZKp4FJ-m5FkKmXTzb8/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
-  </div>
-  </div>
-
-  <div class="description-box">
-  <h2>Day 6: Haugesund (Norway)</h2>
-  <p>Our final Norwegian port was Haugesund, rich in Viking history and beautiful coastal scenery.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/1aO-gJayDNDyUXIFCqNNcqnSvfJ6U92Y482rict_QQAU/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
-  </div>
+    <h2>Day 3: Stavanger (Norway)</h2>
+    <p>Our first port of call was Stavanger, where we explored the picturesque old town and harbour area.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/1iNF4ejHThw8FZkcby9pBJRD-OADXRIlssgzRfiLCqxU/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
   </div>
 
   <div class="description-box">
-  <h2>Day 7: At Sea</h2>
-  <p>We sailed south towards England, reflecting on the memorable week in the fjords and enjoying a final sea day onboard Iona.</p>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <a href="https://docs.google.com/document/d/1_9fgrbFmnsysQW8H9n8YbeF36fLiUtOis0u3KGphRWU/edit?usp=drivesdk" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;font-size: 25px; font-weight: bold;">
-      READ TODAY'S JOURNAL✍️
-    </a>
+    <h2>Day 4: Ålesund (Norway)</h2>
+    <p>Ålesund welcomed us with its striking Art Nouveau architecture.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/1ar2MQiy-cm8QocBNxQZgz5sqC0Pvpw68ifZ6lRZG9gs/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
   </div>
+
+  <div class="description-box">
+    <h2>Day 5: Olden & Innvikfjorden (Norway)</h2>
+    <p>Today we sailed through the breathtaking Innvikfjorden and visited the village of Olden.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/11sSg1retpynLX28-Xvvl0TEc-ZKp4FJ-m5FkKmXTzb8/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
   </div>
+
+  <div class="description-box">
+    <h2>Day 6: Haugesund (Norway)</h2>
+    <p>Our final Norwegian port was Haugesund, rich in Viking history and beautiful coastal scenery.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/1aO-gJayDNDyUXIFCqNNcqnSvfJ6U92Y482rict_QQAU/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
+  </div>
+
+  <div class="description-box">
+    <h2>Day 7: At Sea</h2>
+    <p>We sailed south towards England, reflecting on the memorable week in the fjords and enjoying a final sea day onboard Iona.</p>
+    <div style="text-align: center;">
+      <a class="journal-link" href="https://docs.google.com/document/d/1_9fgrbFmnsysQW8H9n8YbeF36fLiUtOis0u3KGphRWU/edit?usp=drivesdk" target="_blank">
+        READ TODAY'S JOURNAL✍️
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © Norwegian Fjords Cruise 2025
+  </footer>
 
 </body>
 </html>
