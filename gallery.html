@@ -1,199 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gallery – Norwegian Fjords Cruise 2025</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background: url('images/iona-flag-mountains.jpg') no-repeat center center fixed;
       background-size: cover;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .description-box {
-      background: rgba(173, 216, 230, 0.85);
-      color: #00274d;
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .gallery-container {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 40px auto;
-      max-width: 900px;
-    }
-
-    .gallery-item {
-      width: 30%;
-      border: 4px solid white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-      cursor: pointer;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      display: block;
-    }
-
-    .lightbox {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 10;
-    }
-
-    .lightbox img {
-      max-width: 90%;
-      max-height: 80vh;
-      border: 5px solid white;
-      border-radius: 10px;
-    }
-
-    nav {
-      text-align: center;
-      margin: 30px 10px;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0 10px;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 8px 14px;
-      border-radius: 5px;
-    }
-
-    .collapsible {
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      cursor: pointer;
-      padding: 14px;
-      width: 90%;
-      max-width: 900px;
-      margin: 20px auto 0;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1em;
-      text-align: left;
-    }
-
-    .collapsible:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    .content {
-      display: none;
-      max-width: 900px;
-      margin: 0 auto 30px;
-      background: rgba(173, 216, 230, 0.85);
-      color: #00274d;
-      padding: 15px 20px;
-      border-radius: 0 0 10px 10px;
-    }
-
-    .content a {
-      display: block;
-      margin: 10px 0;
       color: #003366;
-      font-weight: bold;
-      text-decoration: underline;
-    }
+      text-shadow: 1px 1px 2px #ffffff55;
+    }h1 {
+  text-align: center;
+  margin: 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: rgba(0, 0, 0, 0.4);
-      margin-top: 40px;
-    }
+.description-box {
+  background: rgba(173, 216, 230, 0.85);
+  color: #002244;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  height: 400px;
+}
+
+.gallery-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 45%;
+  transform-origin: bottom center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  border: 4px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.gallery-item:nth-child(1) {
+  transform: translateX(-120%) rotate(-10deg);
+  z-index: 1;
+}
+
+.gallery-item:nth-child(2) {
+  transform: translateX(-50%) rotate(0deg);
+  z-index: 2;
+}
+
+.gallery-item:nth-child(3) {
+  transform: translateX(20%) rotate(10deg);
+  z-index: 1;
+}
+
+nav {
+  text-align: center;
+  margin: 20px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 16px;
+  border-radius: 8px;
+  width: 100px;
+  vertical-align: top;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.collapsible {
+  background-color: #00557f;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  margin: 10px auto;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+  border-radius: 8px;
+}
+
+.active, .collapsible:hover {
+  background-color: #0072aa;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 85%;
+  margin: 0 auto 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.content a {
+  display: block;
+  padding: 10px 0;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
   </style>
 </head>
-<body>
-
-  <h1>Gallery of Memories</h1>
-
-  <div class="description-box">
+<body>  <h1>Gallery of Memories</h1>  <div class="description-box">
     <p>Here’s a collection of moments from our unforgettable cruise — not just the stunning fjords, but also glorious weather, elegant cocktails, fine dining, breathtaking views from the Loen Skylift, a thrilling RIB safari to Haugesund’s offshore communities, and, best of all, the wonderful company we shared it all with.</p>
-  </div>
+  </div><button class="collapsible">View Full Albums</button>
 
-  <!-- Image Gallery -->
-  <div class="gallery-container">
-    <div class="gallery-item"><img src="images/photo1.jpg" alt="Cruise memory 1" /></div>
-    <div class="gallery-item"><img src="images/photo2.jpg" alt="Cruise memory 2" /></div>
-    <div class="gallery-item"><img src="images/photo3.jpg" alt="Cruise memory 3" /></div>
-  </div>
-
-  <!-- Lightbox overlay -->
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="" alt="Enlarged photo" />
-  </div>
-
-  <!-- Google Photo Albums -->
-  <button class="collapsible">Click to view full Google Photo albums</button>
   <div class="content">
-    <a href="https://photos.app.goo.gl/ExampleLink1" target="_blank">Album: Fjords & Fun – Day 1–3</a>
-    <a href="https://photos.app.goo.gl/ExampleLink2" target="_blank">Album: Stunning Olden & Loen</a>
-    <a href="https://photos.app.goo.gl/ExampleLink3" target="_blank">Album: RIB Safari & Haugesund</a>
-    <!-- Replace these links with your actual Google Photos album URLs -->
-  </div>
-
-  <nav>
+    <a href="https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9" target="_blank">Sailaway</a>
+    <a href="https://photos.app.goo.gl/aBSvEypZmEQXVyqv7" target="_blank">Stavanger</a>
+    <a href="https://photos.app.goo.gl/2xx8fPj3EGJ1U15Q9" target="_blank">Ålesund</a>
+    <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5" target="_blank">Olden</a>
+    <a href="https://photos.app.goo.gl/GKWjwuvZofLfR25v7" target="_blank">Haugesund</a>
+    <a href="menus.html">Cruise Menus</a>
+  </div>  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="images/photo1.jpg" alt="Cruise memory 1">
+    </div>
+    <div class="gallery-item">
+      <img src="images/photo2.jpg" alt="Cruise memory 2">
+    </div>
+    <div class="gallery-item">
+      <img src="images/photo3.jpg" alt="Cruise memory 3">
+    </div>
+  </div>  <div class="lightbox" id="lightbox">
+    <img src="" alt="Expanded image">
+  </div>  <nav>
     <a href="index.html">🏠<br>HOME</a>
     <a href="logbook.html">📒<br>LOG</a>
     <a href="videos.html">🎬<br>VIDEOS</a>
     <a href="map.html">🗺️<br>MAP</a>
-    <a href="iona-facts.html">🛳️<br>IONA FACTS</a>
-    <a href="fjord-facts.html">🏞️<br>FJORD FACTS</a>
-  </nav>
-
-  <footer>
+    <a href="iona-facts.html">🛳️<br>IONA FUN FACTS</a>
+    <a href="fjord-facts.html">🏞️<br>FJORD FUN FACTS</a>
+  </nav>  <footer>
     © Norwegian Fjords Cruise 2025
-  </footer>
-
-  <script>
+  </footer>  <script>
     // Lightbox functionality
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    document.querySelectorAll(".gallery-item img").forEach(img => {
-      img.addEventListener("click", () => {
-        lightbox.style.display = "flex";
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+      img.addEventListener('click', () => {
         lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
       });
     });
-    lightbox.addEventListener("click", () => {
-      lightbox.style.display = "none";
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
     });
 
-    // Collapsible toggle
-    const coll = document.querySelector(".collapsible");
-    const content = document.querySelector(".content");
-    coll.addEventListener("click", () => {
-      coll.classList.toggle("active");
-      content.style.display = content.style.display === "block" ? "none" : "block";
+    // Collapsible content
+    document.querySelector('.collapsible').addEventListener('click', function () {
+      this.classList.toggle('active');
+      const content = this.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
     });
-  </script>
-
-</body>
+  </script></body>
 </html>
