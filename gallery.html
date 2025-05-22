@@ -4,16 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery – Norwegian Fjords Cruise 2025</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       background: url('images/iona-flag-mountains.jpg') no-repeat center center fixed;
       background-size: cover;
-      font-family: sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: sans-serif;
       color: #003366;
-      text-shadow: 1px 1px 2px #ffffff88;
+      text-shadow: 1px 1px 2px #ffffffaa;
     }
 
     h1 {
@@ -21,94 +19,97 @@
       margin-top: 20px;
     }
 
-    .description-box {
-      background: rgba(173, 216, 230, 0.85);
-      color: #00274d;
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-      text-align: center;
-    }
-
-    .collapsible-button {
-      display: block;
-      margin: 20px auto;
-      padding: 12px 24px;
-      font-size: 1em;
-      font-weight: bold;
-      color: white;
-      background-color: #004080;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-    }
-
-    .collapsible-button:hover {
-      background-color: #0059b3;
-    }
-
-    .album-links {
-      display: none;
-      max-width: 960px;
-      margin: 20px auto;
-      padding: 10px;
+    .album-gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .album-card {
-      width: 180px;
-      background: rgba(255,255,255,0.85);
+      background: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
       overflow: hidden;
-      transition: transform 0.3s;
+      text-align: center;
+      width: 300px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
     }
 
     .album-card:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
     .album-card img {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 200px;
+      object-fit: cover;
     }
 
-    .album-card a {
-      display: block;
+    .album-title {
       padding: 10px;
-      color: #003366;
-      text-decoration: none;
       font-weight: bold;
     }
 
-    nav {
+    /* Lightbox overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content {
+      background: white;
+      border-radius: 10px;
+      max-width: 90%;
+      max-height: 90%;
       text-align: center;
-      margin: 30px 0;
+      padding: 20px;
+      position: relative;
     }
 
-    nav a {
+    .lightbox-content img {
+      max-width: 100%;
+      max-height: 400px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .lightbox a {
       display: inline-block;
-      margin: 0 10px;
+      background: #003366;
       color: white;
-      font-weight: bold;
       text-decoration: none;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 8px 14px;
+      padding: 10px 20px;
       border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      color: #003366;
+      cursor: pointer;
     }
 
     footer {
       text-align: center;
       padding: 15px;
-      background: rgba(0, 0, 0, 0.4);
+      margin-top: 30px;
+      background: rgba(0,0,0,0.4);
       color: white;
     }
   </style>
@@ -117,69 +118,69 @@
 
   <h1>Gallery of Memories</h1>
 
-  <div class="description-box">
-    <p>Here’s a collection of moments from our unforgettable cruise — not just the stunning fjords, but also glorious weather, elegant cocktails, fine dining, breathtaking views from the Loen Skylift, a thrilling RIB safari to Haugesund’s offshore communities, and, best of all, the wonderful company we shared it all with.</p>
-  </div>
+  <div class="album-gallery">
+    <!-- Repeat this block for each album -->
+    <div class="album-card" onclick="openLightbox('images/thumb-sailaway.jpg', 'Sailaway', 'https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9')">
+      <img src="images/thumb-sailaway.jpg" alt="Sailaway thumbnail">
+      <div class="album-title">Sailaway</div>
+    </div>
 
-  <button class="collapsible-button" onclick="toggleAlbums()">View Full Albums</button>
+    <div class="album-card" onclick="openLightbox('images/thumb-stavanger.jpg', 'Stavanger', 'https://photos.app.goo.gl/aBSvEypZmEQXVyqv7')">
+      <img src="images/thumb-stavanger.jpg" alt="Stavanger thumbnail">
+      <div class="album-title">Stavanger</div>
+    </div>
 
-  <div class="album-links" id="albumSection">
-    <div class="album-card">
-      <a href="https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9" target="_blank">
-        <img src="images/thumb-sailaway.jpg" alt="Sailaway">
-        Sailaway
-      </a>
+    <div class="album-card" onclick="openLightbox('images/thumb-alesund.jpg', 'Ålesund', 'https://photos.app.goo.gl/2xx8fPj3EGJ1U15Q9')">
+      <img src="images/thumb-alesund.jpg" alt="Ålesund thumbnail">
+      <div class="album-title">Ålesund</div>
     </div>
-    <div class="album-card">
-      <a href="https://photos.app.goo.gl/aBSvEypZmEQXVyqv7" target="_blank">
-        <img src="images/thumb-stavanger.jpg" alt="Stavanger">
-        Stavanger
-      </a>
+
+    <div class="album-card" onclick="openLightbox('images/thumb-olden.jpg', 'Olden', 'https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5')">
+      <img src="images/thumb-olden.jpg" alt="Olden thumbnail">
+      <div class="album-title">Olden</div>
     </div>
-    <div class="album-card">
-      <a href="https://photos.app.goo.gl/2xx8fPj3EGJ1U15Q9" target="_blank">
-        <img src="images/thumb-alesund.jpg" alt="Alesund">
-        Ålesund
-      </a>
+
+    <div class="album-card" onclick="openLightbox('images/thumb-haugesund.jpg', 'Haugesund', 'https://photos.app.goo.gl/GKWjwuvZofLfR25v7')">
+      <img src="images/thumb-haugesund.jpg" alt="Haugesund thumbnail">
+      <div class="album-title">Haugesund</div>
     </div>
-    <div class="album-card">
-      <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5" target="_blank">
-        <img src="images/thumb-olden.jpg" alt="Olden">
-        Olden
-      </a>
-    </div>
-    <div class="album-card">
-      <a href="https://photos.app.goo.gl/GKWjwuvZofLfR25v7" target="_blank">
-        <img src="images/thumb-haugesund.jpg" alt="Haugesund">
-        Haugesund
-      </a>
-    </div>
-    <div class="album-card">
-      <a href="menus.html">
-        <img src="images/thumb-menus.jpg" alt="Cruise Menus">
-        Cruise Menus
-      </a>
+
+    <div class="album-card" onclick="openLightbox('images/thumb-menus.jpg', 'Cruise Menus', 'menus.html')">
+      <img src="images/thumb-menus.jpg" alt="Cruise Menus thumbnail">
+      <div class="album-title">Cruise Menus</div>
     </div>
   </div>
 
-  <nav>
-    <a href="index.html">🏠<br>HOME</a>
-    <a href="logbook.html">📒<br>LOG</a>
-    <a href="videos.html">🎬<br>VIDEOS</a>
-    <a href="map.html">🗺️<br>MAP</a>
-    <a href="iona-facts.html">🛳️<br>IONA FACTS</a>
-    <a href="fjord-facts.html">🏞️<br>FJORD FACTS</a>
-  </nav>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="close-btn" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-image" src="" alt="Album preview">
+      <div id="lightbox-title"></div>
+      <a id="lightbox-link" href="#" target="_blank">View Full Album</a>
+    </div>
+  </div>
 
   <footer>
     © Norwegian Fjords Cruise 2025
   </footer>
 
   <script>
-    function toggleAlbums() {
-      const section = document.getElementById('albumSection');
-      section.style.display = section.style.display === 'flex' ? 'none' : 'flex';
+    function openLightbox(imageSrc, title, link) {
+      document.getElementById('lightbox').style.display = 'flex';
+      document.getElementById('lightbox-image').src = imageSrc;
+      document.getElementById('lightbox-title').textContent = title;
+      document.getElementById('lightbox-link').href = link;
     }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Optional: close on background click
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
   </script>
 
 </body>
