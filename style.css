@@ -104,3 +104,10 @@ img {
   font-weight: bold;
   text-shadow: 1px 1px 1px #ffffff;
 }
+.day-label {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #ffefd5;
+}
