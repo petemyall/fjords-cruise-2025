@@ -1,10 +1,9 @@
-/* Basic page styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url("images/iona-flag-mountains.jpg");
+  background-image: url("images/iona-flag-mountains.jpg"), linear-gradient(to bottom, #dbe7f0, #f8f9fa);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -74,6 +73,8 @@ img {
 /* Final leather-bound book styling */
 .collapsible {
   display: block;
+  width: 300px;
+  max-width: 90%;
   background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
   color: #2e1a0f;
   font-family: 'Georgia', serif;
@@ -82,8 +83,6 @@ img {
   text-align: left;
   padding: 20px 25px 20px 35px;
   margin: 20px auto;
-  width: 90%;
-  max-width: 300px;
   border: none;
   border-left: 12px solid #2a150a;
   border-radius: 5px 15px 15px 5px;
