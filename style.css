@@ -73,7 +73,7 @@ img {
 /* Final leather-bound book styling */
 .collapsible {
   display: block;
-  width: 50px;
+  width: 250px;
   max-width: 90%;
   background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
   color: #2e1a0f;
