@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cruise Logbook</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <h1>P&O Iona Norwegian Fjords</h1>
   <h1>Cruise Logbook</h1>
 
-<nav>
+  <nav>
     <a href="index.html">🏠<br>HOME</a>
     <a href="gallery.html">📸<br>PHOTOS</a>
     <a href="videos.html">🎬<br>VIDEOS</a>
@@ -20,52 +20,18 @@
     <a href="fjord-facts.html">🏞️<br>FJORD FACTS</a>
   </nav>
 
-  <button class="collapsible">Southampton</button>
-  <div class="content">
-    <p>Departure from Ocean Terminal, Southampton.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/1Fd7IoplmiBnH8yIqa5FrOpfMpy-Y4nNqrzPxQBHq-6A/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
-  </div>
-  <button class="collapsible">At Sea</button>
-  <div class="content">
-    <p>A relaxing day at sea as we sailed north towards Norway.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/1baahQglnB_YACa4c0JbGRvYM8eLNAabfcGkeB2IluZc/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
-  </div>
-  <button class="collapsible">Stavanger</button>
-  <div class="content">
-    <p>Our first port of call was Stavanger, where we explored the picturesque old town and harbour area.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/1iNF4ejHThw8FZkcby9pBJRD-OADXRIlssgzRfiLCqxU/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
-  </div>
-  <button class="collapsible">Ålesund</button>
-  <div class="content">
-    <p>Ålesund welcomed us with its striking Art Nouveau architecture.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/1ar2MQiy-cm8QocBNxQZgz5sqC0Pvpw68ifZ6lRZG9gs/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
-  </div>
-  <button class="collapsible">Olden</button>
-  <div class="content">
-    <p>Today we sailed through the breathtaking Innvikfjorden and visited the village of Olden.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/11sSg1retpynLX28-Xvvl0TEc-ZKp4FJ-m5FkKmXTzb8/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
-  </div>
-  <button class="collapsible">Haugesund</button>
-  <div class="content">
-    <p>Our final Norwegian port was Haugesund, rich in Viking history and beautiful coastal scenery.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/1aO-gJayDNDyUXIFCqNNcqnSvfJ6U92Y482rict_QQAU/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
-  </div>
-  <button class="collapsible">At Sea</button>
-  <div class="content">
-    <p>We sailed south towards England, reflecting on the memorable week in the fjords and enjoying a final sea day onboard Iona.</p>
-    <a class="journal-link" href="https://docs.google.com/document/d/1_9fgrbFmnsysQW8H9n8YbeF36fLiUtOis0u3KGphRWU/edit?usp=drivesdk" target="_blank">READ TODAY'S JOURNAL✍️</a>
+  <div class="journal-grid">
+    <a href="https://docs.google.com/document/d/1Fd7IoplmiBnH8yIqa5FrOpfMpy-Y4nNqrzPxQBHq-6A/edit?usp=drivesdk" class="journal-book" target="_blank">Southampton</a>
+    <a href="https://docs.google.com/document/d/1baahQglnB_YACa4c0JbGRvYM8eLNAabfcGkeB2IluZc/edit?usp=drivesdk" class="journal-book" target="_blank">At Sea</a>
+    <a href="https://docs.google.com/document/d/1iNF4ejHThw8FZkcby9pBJRD-OADXRIlssgzRfiLCqxU/edit?usp=drivesdk" class="journal-book" target="_blank">Stavanger</a>
+    <a href="https://docs.google.com/document/d/1ar2MQiy-cm8QocBNxQZgz5sqC0Pvpw68ifZ6lRZG9gs/edit?usp=drivesdk" class="journal-book" target="_blank">Ålesund</a>
+    <a href="https://docs.google.com/document/d/11sSg1retpynLX28-Xvvl0TEc-ZKp4FJ-m5FkKmXTzb8/edit?usp=drivesdk" class="journal-book" target="_blank">Olden</a>
+    <a href="https://docs.google.com/document/d/1aO-gJayDNDyUXIFCqNNcqnSvfJ6U92Y482rict_QQAU/edit?usp=drivesdk" class="journal-book" target="_blank">Haugesund</a>
   </div>
 
-  <script>
-    const buttons = document.querySelectorAll(".collapsible");
-    buttons.forEach(button => {
-      button.addEventListener("click", () => {
-        button.classList.toggle("active");
-        const content = button.nextElementSibling;
-        content.style.display = content.style.display === "block" ? "none" : "block";
-      });
-    });
-  </script>
+  <div class="journal-center">
+    <a href="https://docs.google.com/document/d/1_9fgrbFmnsysQW8H9n8YbeF36fLiUtOis0u3KGphRWU/edit?usp=drivesdk" class="journal-book" target="_blank">At Sea</a>
+  </div>
 
 </body>
 </html>
