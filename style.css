@@ -1,51 +1,36 @@
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #003366;
-  background: url('images/iona-flag-mountains.jpg') center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  text-shadow: 1px 1px 2px #ffffff55;
-}
-
-h1 {
-  text-align: center;
-  margin: 20px;
-}
-
-.description-box {
-  background: rgba(173, 216, 230, 0.85);
-  color: #002244;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  text-align: center;
-}
-
 nav {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-top: 2px solid #0077b6;
+  border-bottom: 2px solid #0077b6;
+  padding: 10px 0;
+  gap: 10px;
 }
 
 nav a {
   font-size: 0.85em;
-  padding: 6px 10px;
-  margin: 6px;
-  display: inline-block;
-  color: #003366;
+  padding: 6px 12px;
+  background-color: #0077b6;
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
   font-weight: bold;
-  background-color: #cce6ff;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
+nav a:hover {
+  background-color: #005f8a;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    font-size: 0.75em;
+    padding: 5px 10px;
+  }
+}
 nav a:hover {
   background-color: #99ccff;
 }

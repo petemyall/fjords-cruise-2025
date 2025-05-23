@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery – Norwegian Fjords Cruise 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: url('images/iona-flag-mountains.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #003366;
+      text-shadow: 1px 1px 2px #ffffff88;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .description-box {
+      background: rgba(173, 216, 230, 0.85);
+      color: #00274d;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .collapsible-button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
+      background-color: #004080;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .collapsible-button:hover {
+      background-color: #0059b3;
+    }
+
+    .album-links {
+      display: none;
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .album-card {
+      width: 180px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .album-card:hover {
+      transform: scale(1.05);
+    }
+
+    .album-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .album-card a {
+      display: block;
+      padding: 10px;
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 8px 14px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="sailaway.html">Sailaway</a>
+    <a href="alesund.html">Ålesund</a>
+    <a href="olden.html">Olden</a>
+    <a href="haugesund.html">Haugesund</a>
+    <a href="seadays.html">Sea Days</a>
+    <a href="logbook.html">Logbook</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+<div class="description-box">
+<h1>Gallery of Memories</h1>
+
+  <div class="description-box">
+    <p>Here’s a collection of moments from our unforgettable cruise — not just the stunning fjords, but also glorious weather, elegant cocktails, fine dining, breathtaking views from the Loen Skylift, a thrilling RIB safari to Haugesund’s offshore communities, and, best of all, the wonderful company we shared it all with.</p>
+  </div>
+
+  <button class="collapsible-button" onclick="toggleAlbums()">View Full Albums</button>
+
+  <div class="album-links" id="albumSection">
+    <div class="album-card">
+      <a href="https://photos.app.goo.gl/9pVRdyLpoWzPL4iL9" target="_blank">
+        <img src="images/thumb-sailaway.jpg" alt="Sailaway">
+        Sailaway
+      </a>
+    </div>
+    <div class="album-card">
+      <a href="https://photos.app.goo.gl/aBSvEypZmEQXVyqv7" target="_blank">
+        <img src="images/thumb-stavanger.jpg" alt="Stavanger">
+        Stavanger
+      </a>
+    </div>
+    <div class="album-card">
+      <a href="https://photos.app.goo.gl/2xx8fPj3EGJ1U15Q9" target="_blank">
+        <img src="images/thumb-alesund.jpg" alt="Alesund">
+        Ålesund
+      </a>
+    </div>
+    <div class="album-card">
+      <a href="https://photos.app.goo.gl/wJWgcdhrFsHwJpsu5" target="_blank">
+        <img src="images/thumb-olden.jpg" alt="Olden">
+        Olden
+      </a>
+    </div>
+    <div class="album-card">
+      <a href="https://photos.app.goo.gl/GKWjwuvZofLfR25v7" target="_blank">
+        <img src="images/thumb-haugesund.jpg" alt="Haugesund">
+        Haugesund
+      </a>
+    </div>
+    <div class="album-card">
+      <a href="menus.html">
+        <img src="images/thumb-menus.png" alt="Cruise Menus">
+        Cruise Menus
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">🏠<br>HOME</a>
+    <a href="logbook.html">📒<br>LOG</a>
+    <a href="videos.html">🎬<br>VIDEOS</a>
+    <a href="map.html">🗺️<br>MAP</a>
+    <a href="iona-facts.html">🛳️<br>IONA FACTS</a>
+    <a href="fjord-facts.html">🏞️<br>FJORD FACTS</a>
+  </nav>
+
+  <footer>
+    © Norwegian Fjords Cruise 2025
+  </footer>
+
+  <script>
+    function toggleAlbums() {
+      const section = document.getElementById('albumSection');
+      section.style.display = section.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</div>
+</body>
+</html>
