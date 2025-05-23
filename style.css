@@ -91,7 +91,7 @@ img {
     5px 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #752824;
+  background-color: #752824,rgba(255, 255, 255, 0.3);
   background-image:
     linear-gradient(135deg,
       rgba(255,255,255,0.12) 25%,
@@ -108,7 +108,7 @@ img {
 }
 
 .collapsible:hover {
-  background-color: #f0e6d2;
+  background-color: rgba(255, 255, 255, 0.3);
   transform: scale(1.01);
   box-shadow:
     inset 0 0 5px rgba(255, 255, 255, 0.4),
