@@ -107,3 +107,44 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* Reusable layout elements */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #003366;
+  background: url('images/iona-flag-mountains.jpg') center center no-repeat;
+  background-size: cover;
+  text-shadow: 1px 1px 2px #ffffff55;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.description-box {
+  background: rgba(173, 216, 230, 0.85);
+  color: #002244;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
