@@ -80,4 +80,25 @@ nav a:hover {
     font-size: 0.8em;
     padding: 5px;
   }
+.book-button {
+  display: block;
+  background: linear-gradient(to right, #8B4513 0px, #8B4513 10px, #f5f5dc 10px);
+  color: #003366;
+  font-family: 'Georgia', serif;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 20px 15px 25px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #5A2D0C;
+  transition: transform 0.2s ease;
+}
+
+.book-button:hover {
+  transform: scale(1.02);
+  background-color: #f0e6d2;
+}
 }
