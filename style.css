@@ -90,3 +90,11 @@ img {
   transform: scale(1.03);
   background-blend-mode: overlay;
 }
+.intro-text {
+  font-size: 18px;
+  color: #003366;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #ffffff;
+}
