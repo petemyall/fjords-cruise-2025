@@ -133,3 +133,8 @@ nav a:hover {
  padding: 20px;
  border-radius: 10px;
 }
+@media (max-width: 600px) {
+  nav a {
+    flex: 0 0 25%;  /* Force 4 per row even on small screens */
+  }
+}
