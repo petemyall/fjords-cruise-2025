@@ -44,7 +44,7 @@ h1 {
   background-color: #0059b3;
 }
 
-/* GALLERY PAGE STYLING */
+/* GALLERY STYLING */
 .album-links {
   display: none;
   max-width: 960px;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .album-card {
-  flex: 0 1 calc((100% - 60px) / 3); /* 3 cards per row */
+  flex: 0 1 calc((100% - 60px) / 3);
   max-width: calc((100% - 60px) / 3);
   background: rgba(255,255,255,0.85);
   border-radius: 10px;
@@ -83,6 +83,7 @@ h1 {
   color: #003366;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em; /* Responsive */
 }
 
 /* NAVIGATION */
@@ -96,7 +97,7 @@ nav {
 }
 
 nav a {
-  flex: 0 1 calc(25% - 10px); /* 4 buttons per row, even on small screens */
+  flex: 0 1 calc(25% - 10px);
   box-sizing: border-box;
   text-align: center;
   padding: 10px 20px;
@@ -113,7 +114,7 @@ nav a:hover {
   background-color: #005f8a;
 }
 
-/* JOURNAL LOGBOOK STYLING */
+/* LOGBOOK STYLING */
 .intro-text {
   font-size: 18px;
   color: #003366;
@@ -140,7 +141,7 @@ nav a:hover {
 }
 
 .journal-book {
-  flex: 0 1 calc((100% - 40px) / 3); /* 3 books per row */
+  flex: 0 1 calc((100% - 40px) / 3);
   max-width: calc((100% - 40px) / 3);
   display: flex;
   align-items: center;
@@ -173,7 +174,7 @@ nav a:hover {
 
 .day-label {
   display: block;
-  font-size: 16px;
+  font-size: 1.2em; /* Responsive */
   font-weight: bold;
   margin-bottom: 5px;
   color: #d4af37;
@@ -183,7 +184,7 @@ nav a:hover {
 }
 
 .port-label {
-  font-size: 20px;
+  font-size: 1.5em; /* Responsive */
   color: #fefae0;
   font-weight: bold;
   font-family: 'Georgia', serif;
@@ -211,14 +212,22 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* RESPONSIVE NAV MEDIA QUERY */
+/* RESPONSIVE TEXT & NAV */
 @media (max-width: 600px) {
   nav a {
-    flex: 0 1 25%; /* 4 buttons per row even on small screens */
+    flex: 0 1 25%;
+  }
+  .day-label {
+    font-size: 1em;
+  }
+  .port-label {
+    font-size: 1.2em;
+  }
+  .album-card a {
+    font-size: 1em;
   }
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
