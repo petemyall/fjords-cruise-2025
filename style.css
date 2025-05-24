@@ -124,10 +124,11 @@ footer {
   color: white;
 }
 .journal-book {
+  flex: 0 1 calc((100% - 40px) / 3); /* Three books per row, accounting for 2 gaps of 20px */
+  max-width: calc((100% - 40px) / 3);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
   height: 120px;
   background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
   border-left: 12px solid #2a150a;
@@ -139,6 +140,7 @@ footer {
   text-decoration: none;
   transition: transform 0.3s ease;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .journal-book:hover {
