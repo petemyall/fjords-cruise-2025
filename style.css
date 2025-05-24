@@ -42,8 +42,8 @@ nav a {
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  flex: 0 0 calc((100% - 40px) / 3); /* 100% minus total gap, divided by 3 */
-  max-width: calc((100% - 40px) / 3);
+  flex: 0 0 calc((100% - 40px) / 4); /* 100% minus total gap, divided by 3 */
+  max-width: calc((100% - 40px) / 4);
   text-align: center;
 }
 
