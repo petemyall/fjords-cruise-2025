@@ -123,3 +123,50 @@ footer {
   background: rgba(0, 0, 0, 0.4);
   color: white;
 }
+.journal-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 120px;
+  background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
+  border-left: 12px solid #2a150a;
+  border-radius: 5px 15px 15px 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  background-image: url("images/leather-texture.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.journal-book:hover {
+  transform: scale(1.03);
+  background-blend-mode: overlay;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #d4af37;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+}
+
+.port-label {
+  font-size: 20px;
+  color: #fefae0;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
