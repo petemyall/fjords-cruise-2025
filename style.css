@@ -132,10 +132,10 @@ nav a:hover {
   margin-bottom: 15px;
   font-size: 1.2em;
 }
-. description-box {
+. narative-box {
   background: rgba(130, 210, 230, 0.3);
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-                         }
+}
