@@ -53,21 +53,16 @@ nav a:hover {
 }
 
 nav.journal-nav a {
-  padding: 6px 12px;      /* Reduced padding for journal nav buttons */
-  font-size: 14px;        /* Smaller font */
+  padding: 6px 12px;      /* Smaller padding */
+  font-size: 12px;        /* Smaller font */
   border-radius: 10px;
   margin: 5px;
 }
 
 @media (max-width: 600px) {
-  nav a {
-    flex: 0 1 25%;
-    padding: 8px 12px;    /* Slightly more space on smaller screens */
-    font-size: 14px;
-  }
   nav.journal-nav a {
-    padding: 8px 14px;
-    font-size: 16px;
+    padding: 5px 10px;    /* Further reduced for small screens */
+    font-size: 10px;      /* Reduced font for small screens */
   }
 }
 
