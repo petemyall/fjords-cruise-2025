@@ -3,18 +3,29 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  color: #002244;
+}
+
+/* Backgrounds */
+body:not(.journal-page) {
   background-image: url("images/iona-flag-mountains.jpg"), linear-gradient(to bottom, #dbe7f0, #f8f9fa);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #002244;
 }
 
+body.journal-page {
+  background: url("images/pale-blue-texture.jpg") repeat fixed center center;
+  background-size: cover;
+}
+
+/* Headings */
 h1 {
   margin: 20px 0;
   text-shadow: 1px 1px 2px #ffffff;
 }
 
+/* Description Box */
 .description-box {
   background: rgba(173, 216, 230, 0.3);
   color: #00274d;
@@ -26,25 +37,7 @@ h1 {
   text-align: center;
 }
 
-.collapsible-button {
-  display: block;
-  margin: 20px auto;
-  padding: 12px 24px;
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-  background-color: #004080;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-}
-
-.collapsible-button:hover {
-  background-color: #0059b3;
-}
-
-/* GALLERY STYLING */
+/* Gallery Cards */
 .album-links {
   display: none;
   max-width: 960px;
@@ -86,7 +79,7 @@ h1 {
   font-size: 1.2em;
 }
 
-/* NAVIGATION */
+/* Navigation Styling */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -114,106 +107,18 @@ nav a:hover {
   background-color: #005f8a;
 }
 
-/* LOGBOOK STYLING */
-.intro-text {
+nav.journal-nav a {
+  padding: 12px 24px;
   font-size: 18px;
-  color: #003366;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #ffffff;
-}
-
-.journal-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 40px auto 20px;
-  padding: 0 10px;
-}
-
-.journal-center {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.journal-book {
-  flex: 0 1 calc((100% - 40px) / 3);
-  max-width: calc((100% - 40px) / 3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
-  border-left: 12px solid #2a150a;
-  border-radius: 5px 15px 15px 5px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-  background-image: url("images/leather-texture.jpg");
-  background-size: cover;
-  background-blend-mode: multiply;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.journal-book:hover {
-  transform: scale(1.03);
-  background-blend-mode: overlay;
-}
-
-.label-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.day-label {
-  display: block;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #d4af37;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  letter-spacing: 1px;
-  font-family: 'Georgia', serif;
-}
-
-.port-label {
-  font-size: 1.5em;
-  color: #fefae0;
-  font-weight: bold;
-  font-family: 'Georgia', serif;
-}
-
-/* FACTS & NARRATIVE BOXES */
-.facts-box {
-  background: rgba(0, 0, 0, 0.3);
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
   border-radius: 10px;
+  margin: 5px;
 }
 
-.fact {
-  margin-bottom: 15px;
-  font-size: 1.2em;
-}
-
-.narrative-box {
-  background: rgba(130,210,230,0.3);
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* RESPONSIVE FOR SMALL SCREENS */
 @media (max-width: 600px) {
+  nav.journal-nav a {
+    padding: 16px 28px;
+    font-size: 20px;
+  }
   nav a {
     flex: 0 1 25%;
   }
@@ -236,29 +141,23 @@ nav a:hover {
   }
 }
 
+/* Narrative and Facts Boxes */
+.narrative-box, .facts-box {
+  background: rgba(173, 216, 230, 0.3);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fact {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
 footer {
   text-align: center;
   padding: 15px;
   background: rgba(0, 0, 0, 0.4);
   color: white;
-}
-/* JOURNAL PAGE STYLING */
-body.journal-page {
-  background: url('images/pale-blue-texture.jpg') repeat fixed center center;
-  background-size: cover;
-  color: #002244;
-}
-
-nav.journal-nav a {
-  padding: 12px 24px;
-  font-size: 18px;
-  border-radius: 10px;
-  margin: 5px;
-}
-
-@media (max-width: 600px) {
-  nav.journal-nav a {
-    padding: 16px 28px;
-    font-size: 20px;
-  }
 }
