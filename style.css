@@ -14,7 +14,8 @@ body:not(.journal-page) {
 }
 
 body.journal-page {
-  background: url("images/pale-blue-texture.jpg") repeat fixed center center;
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), 
+              url("images/pale-blue-texture.jpg") repeat fixed center center;
   background-size: cover;
 }
 
@@ -23,7 +24,7 @@ h1 {
   text-shadow: 1px 1px 2px #ffffff;
 }
 
-/* NAVIGATION BUTTONS */
+/* NAVIGATION */
 nav {
   display: flex;
   flex-wrap: wrap;
