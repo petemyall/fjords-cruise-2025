@@ -191,3 +191,15 @@ footer {
   display: block;
   margin: auto;
   }
+/* Journal main content styling */
+main {
+  max-width: 800px;
+  margin: 20px auto;  /* top/bottom 20px, left/right auto for centering */
+  padding: 20px;
+  background: rgba(173, 216, 230, 0.2);  /* optional background */
+  border-radius: 10px;  /* optional rounded corners */
+}
+
+main p {
+  margin-bottom: 10px;  /* smaller paragraph gaps */
+}
