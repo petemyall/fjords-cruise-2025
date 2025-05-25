@@ -161,3 +161,33 @@ footer {
   background: rgba(0, 0, 0, 0.4);
   color: white;
 }
+.image-frame {
+  display: inline-block;
+  border: 3px solid #0077b6;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: rgba(173, 216, 230, 0.2);
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.image-label {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.image-frame img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  display: block;
+  margin: auto;
+  }
