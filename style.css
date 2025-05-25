@@ -6,7 +6,6 @@ body {
   color: #002244;
 }
 
-/* Backgrounds */
 body:not(.journal-page) {
   background-image: url("images/iona-flag-mountains.jpg"), linear-gradient(to bottom, #dbe7f0, #f8f9fa);
   background-size: cover;
@@ -19,67 +18,12 @@ body.journal-page {
   background-size: cover;
 }
 
-/* Headings */
 h1 {
   margin: 20px 0;
   text-shadow: 1px 1px 2px #ffffff;
 }
 
-/* Description Box */
-.description-box {
-  background: rgba(173, 216, 230, 0.3);
-  color: #00274d;
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-/* Gallery Cards */
-.album-links {
-  display: none;
-  max-width: 960px;
-  margin: 20px auto;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.album-card {
-  flex: 0 1 calc((100% - 60px) / 3);
-  max-width: calc((100% - 60px) / 3);
-  background: rgba(255,255,255,0.85);
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-  text-align: center;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.album-card:hover {
-  transform: scale(1.05);
-}
-
-.album-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.album-card a {
-  display: block;
-  padding: 10px;
-  color: #003366;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-/* Navigation Styling */
+/* NAVIGATION BUTTONS */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -115,17 +59,83 @@ nav.journal-nav a {
 }
 
 @media (max-width: 600px) {
+  nav a {
+    flex: 0 1 25%;
+  }
   nav.journal-nav a {
     padding: 16px 28px;
     font-size: 20px;
   }
-  nav a {
-    flex: 0 1 25%;
-  }
-  .album-card {
-    flex: 0 1 calc((100% - 20px) / 2);
-    max-width: calc((100% - 20px) / 2);
-  }
+}
+
+/* LOGBOOK "LEATHER BOOK" STYLING */
+.journal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto 20px;
+  padding: 0 10px;
+}
+
+.journal-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.journal-book {
+  flex: 0 1 calc((100% - 40px) / 3);
+  max-width: calc((100% - 40px) / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
+  border-left: 12px solid #2a150a;
+  border-radius: 5px 15px 15px 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  background-image: url("images/leather-texture.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.journal-book:hover {
+  transform: scale(1.03);
+  background-blend-mode: overlay;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #d4af37;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+}
+
+.port-label {
+  font-size: 1.5em;
+  color: #fefae0;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+@media (max-width: 600px) {
   .journal-book {
     flex: 0 1 calc((100% - 20px) / 2);
     max-width: calc((100% - 20px) / 2);
@@ -136,23 +146,15 @@ nav.journal-nav a {
   .port-label {
     font-size: 1.1em;
   }
-  .album-card a {
-    font-size: 1em;
-  }
 }
 
-/* Narrative and Facts Boxes */
+/* NARRATIVE BOXES */
 .narrative-box, .facts-box {
   background: rgba(173, 216, 230, 0.3);
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-}
-
-.fact {
-  margin-bottom: 15px;
-  font-size: 1.2em;
 }
 
 footer {
