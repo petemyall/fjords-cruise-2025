@@ -59,7 +59,7 @@ nav.journal-nav a {
   margin: 5px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   nav.journal-nav a {
     padding: 5px 10px;    /* Further reduced for small screens */
     font-size: 10px;      /* Reduced font for small screens */
