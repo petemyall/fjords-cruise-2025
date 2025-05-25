@@ -24,7 +24,6 @@ h1 {
   text-shadow: 1px 1px 2px #ffffff;
 }
 
-/* NAVIGATION */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -38,13 +37,13 @@ nav a {
   flex: 0 1 calc(25% - 10px);
   box-sizing: border-box;
   text-align: center;
-  padding: 5px 10px;      /* Reduced padding */
+  padding: 5px 10px;
   background-color: #0077b6;
   color: white;
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 12px;        /* Smaller font size */
+  font-size: 12px;
   transition: background-color 0.3s ease;
 }
 
@@ -53,20 +52,20 @@ nav a:hover {
 }
 
 nav.journal-nav a {
-  padding: 6px 12px;      /* Smaller padding */
-  font-size: 12px;        /* Smaller font */
+  padding: 6px 12px;
+  font-size: 12px;
   border-radius: 10px;
   margin: 5px;
 }
 
 @media (max-width: 600px) {
   nav.journal-nav a {
-    padding: 5px 10px;    /* Further reduced for small screens */
-    font-size: 10px;      /* Reduced font for small screens */
+    padding: 5px 10px;
+    font-size: 10px;
   }
 }
 
-/* LOGBOOK "LEATHER BOOK" STYLING */
+/* LOGBOOK STYLING (Leather Book Style) */
 .journal-grid {
   display: flex;
   flex-wrap: wrap;
@@ -84,16 +83,17 @@ nav.journal-nav a {
 }
 
 .journal-book {
-  flex: 0 1 calc((100% - 40px) / 3);
-  max-width: calc((100% - 40px) / 3);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  flex: 0 1 calc((100% - 60px) / 3);
+  max-width: calc((100% - 60px) / 3);
+  height: 140px;
   background: linear-gradient(to right, #3a1f0f 10px, #5a3825 10px, #f5e9d4);
   border-left: 12px solid #2a150a;
   border-radius: 5px 15px 15px 5px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
   background-image: url("images/leather-texture.jpg");
   background-size: cover;
   background-blend-mode: multiply;
@@ -116,10 +116,8 @@ nav.journal-nav a {
 }
 
 .day-label {
-  display: block;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
-  margin-bottom: 5px;
   color: #d4af37;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   letter-spacing: 1px;
@@ -127,7 +125,7 @@ nav.journal-nav a {
 }
 
 .port-label {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #fefae0;
   font-weight: bold;
   font-family: 'Georgia', serif;
@@ -138,15 +136,11 @@ nav.journal-nav a {
     flex: 0 1 calc((100% - 20px) / 2);
     max-width: calc((100% - 20px) / 2);
   }
-  .day-label {
-    font-size: 0.9em;
-  }
-  .port-label {
-    font-size: 1.1em;
-  }
+  .day-label { font-size: 0.9em; }
+  .port-label { font-size: 1em; }
 }
 
-/* NARRATIVE BOXES */
+/* Narrative and facts boxes */
 .narrative-box, .facts-box {
   background: rgba(173, 216, 230, 0.3);
   max-width: 800px;
@@ -161,6 +155,7 @@ footer {
   background: rgba(0, 0, 0, 0.4);
   color: white;
 }
+
 .image-frame {
   display: inline-block;
   border: 3px solid #0077b6;
@@ -173,7 +168,6 @@ footer {
 }
 
 .image-label {
-  display: inline-block;
   background-color: #0077b6;
   color: white;
   font-weight: bold;
@@ -190,19 +184,18 @@ footer {
   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
   display: block;
   margin: auto;
-  }
-/* Journal main content styling */
-main {
-  max-width: 800px;
-  margin: 20px auto;  /* top/bottom 20px, left/right auto for centering */
-  padding: 20px;
-  background: rgba(173, 216, 230, 0.2);  /* optional background */
-  border-radius: 10px;  /* optional rounded corners */
 }
 
-main p {
-  margin-bottom: 10px;  /* smaller paragraph gaps */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(173, 216, 230, 0.2);
+  border-radius: 10px;
 }
+
+main p { margin-bottom: 10px; }
+
 .menu-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -211,28 +204,24 @@ main p {
   margin: 20px auto;
 }
 
-.menu-gallery a {
-  display: block;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 .menu-gallery img {
   width: 100%;
-  height: auto;
-  display: block;
   transition: transform 0.3s ease;
 }
 
 .menu-gallery img:hover {
   transform: scale(1.05);
 }
+
+/* Flipbook container (optional) */
 .book-container {
   perspective: 2000px;
   width: 300px;
   height: 400px;
-  margin: 20px auto;
-  position: relative;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .page {
@@ -246,28 +235,12 @@ main p {
   transform-style: preserve-3d;
   transition: transform 1s;
   cursor: pointer;
+  backface-visibility: hidden;
 }
 
-.page1 {
-  background-image: url('/fjords-cruise-2025/images/menu1.jpg');
-  z-index: 4;
-}
+.page1 { background-image: url('/fjords-cruise-2025/images/menu1.jpg'); z-index: 4; }
+.page2 { background-image: url('/fjords-cruise-2025/images/menu2.jpg'); z-index: 3; }
+.page3 { background-image: url('/fjords-cruise-2025/images/menu3.jpg'); z-index: 2; }
+.page4 { background-image: url('/fjords-cruise-2025/images/menu4.jpg'); z-index: 1; }
 
-.page2 {
-  background-image: url('/fjords-cruise-2025/images/menu2.jpg');
-  z-index: 3;
-}
-
-.page3 {
-  background-image: url('/fjords-cruise-2025/images/menu3.jpg');
-  z-index: 2;
-}
-
-.page4 {
-  background-image: url('/fjords-cruise-2025/images/menu4.jpg');
-  z-index: 1;
-}
-
-.page.flipped {
-  transform: rotateY(-180deg);
-}
+.page.flipped { transform: rotateY(-180deg); }
