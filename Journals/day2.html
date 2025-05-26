@@ -49,6 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
   pages.forEach(page => page.classList.remove('flipped'));
 });
 </script>
+  <script>
+  document.querySelectorAll('.page').forEach(page => {
+    page.addEventListener('click', () => {
+      page.classList.toggle('flipped');
+    });
+  });
+  </script>
 
 </body>
 </html>
