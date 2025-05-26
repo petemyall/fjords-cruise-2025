@@ -63,6 +63,30 @@ nav.journal-nav a {
     padding: 5px 10px;
     font-size: 10px;
   }
+  nav.journal-nav a {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  nav.journal-nav a {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+
+nav.journal-nav a.big-button {
+  padding: calc(6px * 1.5) calc(12px * 1.5);
+  font-size: calc(12px * 1.5);
+}
+
+@media (max-width: 600px) {
+  nav.journal-nav a.big-button {
+    padding: calc(5px * 1.5) calc(10px * 1.5);
+    font-size: calc(10px * 1.5);
+  }
 }
 
 /* LOGBOOK "LEATHER BOOK" STYLING */
