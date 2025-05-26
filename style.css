@@ -50,7 +50,8 @@ nav a {
 nav a:hover {
   background-color: #005f8a;
 }
-  nav.journal-nav a {
+
+nav.journal-nav a {
   padding: 6px 12px;
   font-size: 12px;
   border-radius: 10px;
@@ -61,18 +62,6 @@ nav a:hover {
   nav.journal-nav a {
     padding: 5px 10px;
     font-size: 10px;
-  }
-}
-
-nav.journal-nav a.big-button {
-  padding: calc(6px * 1.5) calc(12px * 1.5);
-  font-size: calc(12px * 1.5);
-}
-
-@media (max-width: 600px) {
-  nav.journal-nav a.big-button {
-    padding: calc(5px * 1.5) calc(10px * 1.5);
-    font-size: calc(10px * 1.5);
   }
 }
 
@@ -171,8 +160,7 @@ nav.journal-nav a.big-button {
   border-radius: 12px;
   padding: 10px;
   background-color: rgba(173, 216, 230, 0.2);
-  width: 80%;
-  max-width: 800px;
+  max-width: 300px;
   margin: 20px auto;
   text-align: center;
 }
@@ -286,4 +274,4 @@ footer {
   padding: 15px;
   background: rgba(0, 0, 0, 0.4);
   color: white;
-}
+  }
