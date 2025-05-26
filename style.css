@@ -275,3 +275,19 @@ footer {
   background: rgba(0, 0, 0, 0.4);
   color: white;
   }
+.album-button {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  padding: 20px 60px;  /* Wider and taller */
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.album-button:hover {
+  background-color: #005f8a;
+  transform: scale(1.05);
+}
