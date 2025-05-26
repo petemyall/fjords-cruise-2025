@@ -50,9 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
   <script>
-  document.querySelectorAll('.page').forEach(page => {
+  const pages = document.querySelectorAll('.page');
+  
+  pages.forEach((page, index) => {
     page.addEventListener('click', () => {
       page.classList.toggle('flipped');
+
+      // If this is the last page (e.g., 4th page), trigger reset
+      if (index === pages.length - 1 && page.classList.contains('flipped')) {
+        setTimeout(() => {
+          pages.forEach(p => p.classList.remove('flipped'));
+        }, 1000); // 1000ms = 1 second delay
+      }
     });
   });
   </script>
