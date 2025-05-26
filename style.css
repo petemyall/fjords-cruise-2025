@@ -340,3 +340,16 @@ footer {
 .video-label a:hover {
   text-decoration: underline;
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;  /* Adjust as needed */
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Modern browsers support */
+  display: block;
+}
