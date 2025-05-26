@@ -218,10 +218,9 @@ main p { margin-bottom: 10px; }
   perspective: 2000px;
   width: 300px;
   height: 400px;
-  position: fixed;
-  top: 100px;
-  right: 20px;
-  z-index: 1000;
+  margin: 20px auto; /* Center in content */
+  position: relative; /* Not fixed */
+  z-index: 1; /* Lower stacking to avoid covering text */
 }
 
 .page {
@@ -236,6 +235,7 @@ main p { margin-bottom: 10px; }
   transition: transform 1s;
   cursor: pointer;
   backface-visibility: hidden;
+  z-index: inherit;
 }
 
 .page1 { background-image: url('/fjords-cruise-2025/images/menu1.jpg'); z-index: 4; }
@@ -243,4 +243,7 @@ main p { margin-bottom: 10px; }
 .page3 { background-image: url('/fjords-cruise-2025/images/menu3.jpg'); z-index: 2; }
 .page4 { background-image: url('/fjords-cruise-2025/images/menu4.jpg'); z-index: 1; }
 
-.page.flipped { transform: rotateY(-180deg); }
+.page.flipped {
+  transform: rotateY(-180deg);
+  z-index: 0; /* Let flipped pages stay visible */
+}
