@@ -322,3 +322,21 @@ footer {
   background: rgba(0, 0, 0, 0.4);
   color: white;
 }
+.video-label {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.1em;
+}
+
+.video-label a {
+  display: block;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.video-label a:hover {
+  text-decoration: underline;
+}
