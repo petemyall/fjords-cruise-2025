@@ -66,14 +66,24 @@ nav.journal-nav a {
   }
 }
 .description-box {
-  background: rgba(173, 216, 230, 0.3);
-  color: #00274d;
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  background: rgba(173, 216, 230, 0.5); /* Pale blue with more transparency */
+  color: #003366;                       /* Deep blue text for readability */
+  max-width: 800px;                     /* Wide enough for readability */
+  margin: 30px auto;                    /* Centered with spacing */
+  padding: 25px;                        /* Padding for content */
+  border-radius: 15px;                  /* Rounded corners */
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.2); /* Soft shadow */
+  font-size: 1.1em;                     /* Slightly larger text */
+  line-height: 1.6;                     /* Comfortable spacing between lines */
+}
+
+.description-box p {
+  margin-bottom: 10px;                  /* Spacing between facts */
+}
+
+.description-box strong {
+  color: #0077b6;                       /* Highlighted numbering */
+  font-size: 1.2em;                     /* Larger numbering */
 }
 
 .collapsible-button {
