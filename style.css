@@ -39,8 +39,8 @@ nav a {
   box-sizing: border-box;
   text-align: center;
   padding: 5px 10px;
-  background-color: rgba(173, 216, 230,0.3);
-  border: 6px solid rgba(3, 70, 148,0.6);
+  background-color: rgba(173, 216, 230,0.6);
+  border: 6px solid rgba(3, 70, 148,0.9);
   border-radius: 10px;
   color: white;
   text-decoration: none;
